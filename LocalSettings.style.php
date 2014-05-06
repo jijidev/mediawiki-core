@@ -14,14 +14,14 @@ $wgDefaultSkin      = 'naiad';
 //$wgSkipSkins = array("chick", "cologneblue", "myskin", "nostalgia", "simple", "standard");
 
 
-$wgLogo            = "$wgStylePath/common/images/wiki.png";    # default path
+$wgLogo             = "$wgStylePath/common/images/wiki.png";    # default path
 
-$wgUseSiteCss = true;
-$wgUseSiteJS  = true;
-$wgUseAjax    = true;
+$wgUseSiteCss       = true;
+$wgUseSiteJS        = true;
+$wgUseAjax          = true;
 
-$wgAllowUserSkin = true;
-$wgAllowUserCss  = true;
-$wgAllowUserJs   = true;
+$wgAllowUserSkin    = true;
+$wgAllowUserCss     = true;
+$wgAllowUserJs      = true;
 
 ?>
