@@ -15,7 +15,7 @@ require_once( "LocalSettings.uploads.php"     );
 require_once( "localsettings._notify.php"     );	# private
 require_once( "LocalSettings.notify.php"      );
 require_once( "LocalSettings.namespaces.php"  );
-require_once( "LocalSettings.permissions.php" );
+//require_once( "LocalSettings.permissions.php" );
 require_once( "LocalSettings.tools.php"       );
 require_once( "LocalSettings.extensions.php"  );
 require_once( "localsettings._extensions.php" );	# private
