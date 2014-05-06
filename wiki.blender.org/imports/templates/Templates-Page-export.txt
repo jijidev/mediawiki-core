@@ -1,0 +1,9 @@
+Category:Blend-doc-repository/Template/Page
+Template:Blend-doc-repository/Template/Page
+Template:Page
+Template:Page/Footer
+Template:Page/Footer/BugReport
+Template:Page/Footer/doc
+Template:Page/Header
+Template:Page/Header/doc
+Template:Page/Navigator

@@ -1,0 +1,298 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.3/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.3/ http://www.mediawiki.org/xml/export-0.3.xsd" version="0.3" xml:lang="en">
+  <siteinfo>
+    <sitename>BlenderWiki</sitename>
+    <base>http://wiki.blender.org/index.php/Main_Page</base>
+    <generator>MediaWiki 1.15.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2">Media</namespace>
+      <namespace key="-1">Special</namespace>
+      <namespace key="0" />
+      <namespace key="1">Talk</namespace>
+      <namespace key="2">User</namespace>
+      <namespace key="3">User talk</namespace>
+      <namespace key="4">BlenderWiki</namespace>
+      <namespace key="5">BlenderWiki talk</namespace>
+      <namespace key="6">File</namespace>
+      <namespace key="7">File talk</namespace>
+      <namespace key="8">MediaWiki</namespace>
+      <namespace key="9">MediaWiki talk</namespace>
+      <namespace key="10">Template</namespace>
+      <namespace key="11">Template talk</namespace>
+      <namespace key="12">Help</namespace>
+      <namespace key="13">Help talk</namespace>
+      <namespace key="14">Category</namespace>
+      <namespace key="15">Category talk</namespace>
+      <namespace key="100">Doc</namespace>
+      <namespace key="101">Doc talk</namespace>
+      <namespace key="102">Extensions</namespace>
+      <namespace key="103">Extensions talk</namespace>
+      <namespace key="104">Dev</namespace>
+      <namespace key="105">Dev talk</namespace>
+      <namespace key="106">Org</namespace>
+      <namespace key="107">Org talk</namespace>
+      <namespace key="108">Meta</namespace>
+      <namespace key="109">Meta talk</namespace>
+      <namespace key="110">Attic</namespace>
+      <namespace key="111">Attic talk</namespace>
+      <namespace key="112">Robotics</namespace>
+      <namespace key="113">Robotics talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>MediaWiki:Blenderskin-menu</title>
+    <id>12414</id>
+    <revision>
+      <id>114654</id>
+      <timestamp>2010-05-17T09:21:48Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>dev menu in the Extensions: namespace also</comment>
+      <text xml:space="preserve">{{#switch:{{NAMESPACE}}
+|Org=&lt;ul class=&quot;noprint&quot;&gt;&lt;li&gt;&lt;a href=&quot;community/get-involved/&quot;&gt;Get Involved&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li class=&quot;subnav-active&quot;&gt;&lt;a href=&quot;http://www.blender.org/community/user-community/&quot;&gt;User Community&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/community/professionals/&quot;&gt;Professionals&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/community/artists/&quot;&gt;Artists&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/community/educational/&quot;&gt;Educational&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/community/forums/&quot;&gt;Forums&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/community/chat/&quot;&gt;Chat&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/community/website-maintenance/about/&quot;&gt;Website Maintenance&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/community/blender-conference/&quot;&gt;Blender Conference&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+|Dev|Extensions|Robotics=&lt;ul class=&quot;noprint&quot;&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/development/coding-guides/&quot;&gt;Coding Guides&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/development/report-a-bug/&quot;&gt;Report a Bug&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/development/submit-a-patch/&quot;&gt;Submit a Patch&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/development/release-logs/&quot;&gt;Release Logs&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/development/current-projects/&quot;&gt;Current Projects&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/development/architecture/&quot;&gt;Architecture&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/development/building-blender/&quot;&gt;Building Blender&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/documentation/250PythonDoc/contents.html&quot;&gt;PyAPI&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li class=&quot;subnav-active&quot;&gt;&lt;a href=&quot;http://wiki.blender.org/Dev:Contents&quot;&gt;Wiki&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+|#default=&lt;ul class=&quot;noprint&quot;&gt;&lt;li class=&quot;subnav-active&quot;&gt;&lt;a href=&quot;http://wiki.blender.org&quot;&gt;Wiki&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/education-help/quickstart/&quot;&gt;Quickstart&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/education-help/tutorials/&quot;&gt;Tutorials&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/education-help/manuals-books/&quot;&gt;Manuals &amp; Books&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/education-help/python/&quot;&gt;Python&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/education-help/faq/&quot;&gt;FAQ&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/education-help/support-forums/&quot;&gt;Support Forums&lt;/a&gt;&lt;/li&gt;&lt;li&gt;•&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.blender.org/education-help/certified-trainer/&quot;&gt;Certified trainer&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Blenderskin-top</title>
+    <id>12418</id>
+    <revision>
+      <id>114655</id>
+      <timestamp>2010-05-17T09:25:10Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>icon development on also for Extensions: namespace</comment>
+      <text xml:space="preserve">&lt;div id=&quot;navcontainer&quot; class=&quot;noprint&quot;&gt;&lt;a href=&quot;http://www.blender.org/&quot; &gt;&lt;img src=&quot;http://www.blender.org/fileadmin/site/_gfx/nav-home.png&quot; width=&quot;140&quot; height=&quot;50&quot; alt=&quot;blender.org home page&quot; title=&quot;blender.org home page&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.blender.org/features-gallery/&quot; &gt;&lt;img src=&quot;http://www.blender.org/fileadmin/site/_gfx/nav-features.png&quot; width=&quot;140&quot; height=&quot;50&quot; alt=&quot;Features &amp;amp; Gallery&quot; title=&quot;Features &amp;amp; Gallery&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.blender.org/download/get-blender/&quot; &gt;&lt;img src=&quot;http://www.blender.org/fileadmin/site/_gfx/nav-download.png&quot; width=&quot;140&quot; height=&quot;50&quot; alt=&quot;Download&quot; title=&quot;Download&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.blender.org/education-help/&quot; &gt;&lt;img src=&quot;http://www.blender.org/fileadmin/site/_gfx/nav-help{{#switch:{{NAMESPACE}}|Dev|Extensions|Robotics|Org=|-on}}.png&quot; width=&quot;140&quot; height=&quot;50&quot; alt=&quot;Tutorials &amp;amp; Help&quot; title=&quot;Tutorials &amp;amp; Help&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.blender.org/community/user-community/&quot; &gt;&lt;img src=&quot;http://www.blender.org/fileadmin/site/_gfx/nav-community{{#ifeq:{{NAMESPACE}}|Org|-on|}}.png&quot; width=&quot;140&quot; height=&quot;50&quot; alt=&quot;Community&quot; title=&quot;Community&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.blender.org/development/&quot; &gt;&lt;img src=&quot;http://www.blender.org/fileadmin/site/_gfx/nav-development{{#switch:{{NAMESPACE}}|Dev|Extensions|Robotics=-on}}.png&quot; width=&quot;140&quot; height=&quot;50&quot; alt=&quot;Development&quot; title=&quot;Development&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.blender.org/e-shop/&quot; &gt;&lt;img src=&quot;http://www.blender.org/fileadmin/site/_gfx/nav-eshop.png&quot; width=&quot;140&quot; height=&quot;50&quot; alt=&quot;e-Shop&quot; title=&quot;e-Shop&quot; /&gt;&lt;/a&gt;&lt;/div&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Nstab-attic</title>
+    <id>17949</id>
+    <revision>
+      <id>68054</id>
+      <timestamp>2009-02-23T17:46:12Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <comment>adding this Message for clarity</comment>
+      <text xml:space="preserve">Attic page</text>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Nstab-category</title>
+    <id>17947</id>
+    <revision>
+      <id>68052</id>
+      <timestamp>2009-02-23T17:44:05Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <comment>description</comment>
+      <text xml:space="preserve">Category page</text>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Nstab-dev</title>
+    <id>17931</id>
+    <revision>
+      <id>68116</id>
+      <timestamp>2009-02-24T18:31:02Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <comment>added pagename={{PAGENAME}}</comment>
+      <text xml:space="preserve">{{Page/Type| namespace={{NAMESPACE}} | pagename={{PAGENAME}} }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Nstab-doc</title>
+    <id>17932</id>
+    <revision>
+      <id>68113</id>
+      <timestamp>2009-02-24T18:30:34Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <comment>added pagename={{PAGENAME}}</comment>
+      <text xml:space="preserve">{{Page/Type| namespace={{NAMESPACE}} | pagename={{PAGENAME}} }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Nstab-extensions</title>
+    <id>17933</id>
+    <revision>
+      <id>68114</id>
+      <timestamp>2009-02-24T18:30:51Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <comment>added pagename={{PAGENAME}}</comment>
+      <text xml:space="preserve">{{Page/Type| namespace={{NAMESPACE}} | pagename={{PAGENAME}} }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Nstab-meta</title>
+    <id>17946</id>
+    <revision>
+      <id>68117</id>
+      <timestamp>2009-02-24T18:31:08Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <comment>added pagename={{PAGENAME}}</comment>
+      <text xml:space="preserve">{{Page/Type| namespace={{NAMESPACE}} | pagename={{PAGENAME}} }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Nstab-org</title>
+    <id>17950</id>
+    <revision>
+      <id>68115</id>
+      <timestamp>2009-02-24T18:30:57Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <comment>added pagename={{PAGENAME}}</comment>
+      <text xml:space="preserve">{{Page/Type| namespace={{NAMESPACE}} | pagename={{PAGENAME}} }}</text>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Nstab-special</title>
+    <id>17948</id>
+    <revision>
+      <id>68053</id>
+      <timestamp>2009-02-23T17:44:25Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <comment>description</comment>
+      <text xml:space="preserve">Special page</text>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Sidebar</title>
+    <id>987</id>
+    <revision>
+      <id>114649</id>
+      <timestamp>2010-05-17T09:11:54Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">*navigation 
+**mainpage|mainpage 
+**Doc:Manual|User Manual
+**{{#switch: {{#titleparts:{{PAGENAME}}|1}} |AR|BR|BG|CA|CZ|DE|DK|ES|FA|FI|FR|ID|IT|KO|NL|PL|PT|RO|RU|SR|SV|UK|ZH=Doc:{{#titleparts:{{PAGENAME}}|1}}/Manual{{!}}{{#titleparts:{{PAGENAME}}|1}}/Manual }}
+**Doc:Tutorials|Tutorials
+**Extensions:Py/Scripts|Scripts Catalog
+**http://www.blender.org/documentation/250PythonDoc/contents.html|Python API (2.52)
+**Dev:Contents|Development
+**Meta:Guides/Writer_Guide|Wiki Guidelines
+**recentchanges-url|recentchanges
+**Special:Categories|Categories
+**portal-url|portal 
+**currentevents-url|currentevents
+
+*extras 
+**Special:Newimages|New files 
+**Special:Newpages|New pages 
+**Special:Popularpages|Popular pages &lt;!--
+**Special:Wantedpages|Wanted pages 
+**randompage-url|randompage--&gt;
+**{{fullurl:{{FULLPAGENAME}}|useskin=monobook}} | View as Monobook
+**http://pdf.letworyinteractive.com/ | PDF Manual (NEW!)
+**helppage|help 
+**sitesupport-url|sitesupport</text>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Uploadtext</title>
+    <id>1149</id>
+    <revision>
+      <id>9488</id>
+      <timestamp>2006-01-10T11:06:20Z</timestamp>
+      <contributor>
+        <username>JesterKing</username>
+        <id>29</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">Use the form below to upload new files,
+to view or search previously uploaded images
+go to the [[Special:Imagelist|list of uploaded files]],
+uploads and deletions are also logged in the [[Special:Log|project log]].
+
+You must also check the box affirming that you are not
+violating any copyrights by uploading the file.
+Press the &quot;Upload&quot; button to finish the upload.
+
+To include the image in a page, use a link in the form
+'''&lt;nowiki&gt;[[{{ns:6}}:file.jpg]]&lt;/nowiki&gt;''',
+'''&lt;nowiki&gt;[[{{ns:6}}:file.png|alt text]]&lt;/nowiki&gt;''' or
+'''&lt;nowiki&gt;[[{{ns:-2}}:file.ogg]]&lt;/nowiki&gt;''' for directly linking to the file.
+
+'''Note!'''please name your files according to [[Meta/Style Guide#File Names|the naming conventions]], e.g. Manual-PartXX-self-explanatory-name, Tutorials-self-explanatory-name or Dev-self-explanatory-name etc.</text>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Copyrightwarning2</title>
+    <id>142</id>
+    <revision>
+      <id>22905</id>
+      <timestamp>2006-08-04T10:50:27Z</timestamp>
+      <contributor>
+        <username>Broken</username>
+        <id>27</id>
+      </contributor>
+      <minor/>
+      <comment>updated with style guide link</comment>
+      <text xml:space="preserve">&lt;table style=&quot;margin:0 auto;&quot; id=toc&gt;	 
+&lt;td size=30% bgcolor=Gainsboro&gt;&lt;font color=black&gt;	 
+ © @ [ \ ] ^ &lt; &gt; » « »_« &amp;larr; &amp;rarr; &amp;uarr; &amp;darr; ` ° ± º ¹ ² ³ ¼ ½ ¾ ⅓ ⅔ ⅛ ⅜ ⅝ ⅞ À à Á á Â â Ã ã Ä ä Å å Æ æ Ç ç È è É é Ê ê Ë ë Ì ì Í í Î î Ï ï Ñ ñ Ò ò Ó ó Ô ô Õ õ Ö ö × Ø ø Ù ù Ú ú Û û Ü ü Ý ý ß ð þ ÿ Ā ā Ă ă Ą ą Č č Ć ć Ĉ ĉ Ċ ċ Ď ď Ē ē Ĕ ĕ Ė ė Ę ę Ě ě Ĝ ĝ Ŕ ŕ Š š Ž ž † Α α Β β Γ γ Δ δ Ε ε Ζ ζ Η η Θ θ Ι ι Κ κ Λ λ Μ μ Ν ν Ξ ξ Ο ο Π π Ρ ρ ς Σ σ Τ τ Υ υ Φ φ Χ χ Ψ ψ Ω ω [[_]] | {{_}} | #REDIRECT [[]] &lt;nowiki&gt;--~~~~&lt;/nowiki&gt;&lt;small&gt;(Sign)&lt;/small&gt; &lt;/font&gt;&lt;/td&gt;
+&lt;/table&gt;
+To keep this wiki clean and consistent, please read and follow the [[Meta/Style_Guide|Style Guide]] when making changes.
+
+Please note that all contributions to {{SITENAME}} may be edited, altered, or removed by other contributors. If you don't want your writing to be edited mercilessly, then don't submit it here.
+
+By editing this page you are also promising us that you wrote this yourself, or copied it from a public domain or similar free resource (see $1 for details). &lt;span style=&quot;font-weight: bold;&quot;&gt;Do not submit copyrighted work without permission!&lt;/span&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Page/Type</title>
+    <id>17960</id>
+    <revision>
+      <id>68137</id>
+      <timestamp>2009-02-25T02:19:55Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <comment>&quot;Page&quot; instead of the last #if</comment>
+      <text xml:space="preserve">{{#switch:
+	{{{namespace}}}
+	|Doc={{#switch:{{#titleparts:{{{pagename}}}|1|1}}|Books=Book page|FAQ=FAQ page|Manual=Manual page|Reference=Reference page|Theory=Theory page|Tutorials=Tutorial page|Documentation page}}
+	|Extensions={{#switch:{{#titleparts:{{{pagename}}}|1|1}}|Digital assets=Digital asset page|Plugins= Plugin page|Py=Python page|Render engines=Render engine page|Uni-Verse=Verse page|Extension page}}
+	|Dev={{#switch:{{#titleparts:{{{pagename}}}|1|1}}|Doc=Developer Documentation page|Py=Python Developer page|Ref=Developer Reference page|SundayMeetingAgenda=Sunday Meeting page|Developer page}}
+	|Org={{#switch:{{#titleparts:{{{pagename}}}|1|1}}|Community=Community page|Foundation=Blender Foundation page|Institute=Blender Institute page|Reference=Reference page|Theory=Theory page|Tutorials=Tutorial page|Organization page}}
+	|Meta={{#switch:{{#titleparts:{{{pagename}}}|1|1}}|Guides=Wiki guide|Sandbox=Sandbox page|Wiki Tasks=Wiki Task|Wiki-related page}}
+	|Page
+}}</text>
+    </revision>
+  </page>
+</mediawiki>

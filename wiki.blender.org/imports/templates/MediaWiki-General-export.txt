@@ -1,0 +1,13 @@
+MediaWiki:Blenderskin-menu
+MediaWiki:Blenderskin-top
+MediaWiki:Nstab-attic
+MediaWiki:Nstab-category
+MediaWiki:Nstab-dev
+MediaWiki:Nstab-doc
+MediaWiki:Nstab-extensions
+MediaWiki:Nstab-meta
+MediaWiki:Nstab-org
+MediaWiki:Nstab-special
+MediaWiki:Sidebar
+MediaWiki:Uploadtext
+MediaWiki:Copyrightwarning2

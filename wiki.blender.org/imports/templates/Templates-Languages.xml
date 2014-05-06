@@ -1,0 +1,658 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.3/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.3/ http://www.mediawiki.org/xml/export-0.3.xsd" version="0.3" xml:lang="en">
+  <siteinfo>
+    <sitename>BlenderWiki</sitename>
+    <base>http://wiki.blender.org/index.php/Main_Page</base>
+    <generator>MediaWiki 1.15.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2">Media</namespace>
+      <namespace key="-1">Special</namespace>
+      <namespace key="0" />
+      <namespace key="1">Talk</namespace>
+      <namespace key="2">User</namespace>
+      <namespace key="3">User talk</namespace>
+      <namespace key="4">BlenderWiki</namespace>
+      <namespace key="5">BlenderWiki talk</namespace>
+      <namespace key="6">File</namespace>
+      <namespace key="7">File talk</namespace>
+      <namespace key="8">MediaWiki</namespace>
+      <namespace key="9">MediaWiki talk</namespace>
+      <namespace key="10">Template</namespace>
+      <namespace key="11">Template talk</namespace>
+      <namespace key="12">Help</namespace>
+      <namespace key="13">Help talk</namespace>
+      <namespace key="14">Category</namespace>
+      <namespace key="15">Category talk</namespace>
+      <namespace key="100">Doc</namespace>
+      <namespace key="101">Doc talk</namespace>
+      <namespace key="102">Extensions</namespace>
+      <namespace key="103">Extensions talk</namespace>
+      <namespace key="104">Dev</namespace>
+      <namespace key="105">Dev talk</namespace>
+      <namespace key="106">Org</namespace>
+      <namespace key="107">Org talk</namespace>
+      <namespace key="108">Meta</namespace>
+      <namespace key="109">Meta talk</namespace>
+      <namespace key="110">Attic</namespace>
+      <namespace key="111">Attic talk</namespace>
+      <namespace key="112">Robotics</namespace>
+      <namespace key="113">Robotics talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Category:Blend-doc-repository/Template/Languages</title>
+    <id>26613</id>
+    <revision>
+      <id>115107</id>
+      <timestamp>2010-05-24T15:24:16Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">This category is used to retrieve templates that are part of the [https://svn.blender.org/svnroot/blend-doc blend-doc repository] to commit it in that repository.
+
+[[Category: Blend-doc-repository/Template/Languages]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Blend-doc-repository/Template/Languages</title>
+    <id>26612</id>
+    <revision>
+      <id>114091</id>
+      <timestamp>2010-05-09T20:11:18Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>Created page with '&lt;br/&gt; ---- &lt;span style=&quot;color:grey&quot;&gt; ''This template is part of the [https://svn.blender.org/svnroot/blend-doc blend-doc repository]. We use categories to retrieve templates in o…'</comment>
+      <text xml:space="preserve">&lt;br/&gt;
+----
+&lt;span style=&quot;color:grey&quot;&gt;
+''This template is part of the [https://svn.blender.org/svnroot/blend-doc blend-doc repository]. We use categories to retrieve templates in order to commit it in that repository: '''please don't remove the categorization from this template'''.''
+&lt;/span&gt;
+
+[[Category:Blend-doc-repository/Template/Languages]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages</title>
+    <id>17657</id>
+    <revision>
+      <id>114093</id>
+      <timestamp>2010-05-09T20:16:00Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">{{Subpages}}
+
+{{Blend-doc-repository/Template/Languages}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/Flag</title>
+    <id>21628</id>
+    <revision>
+      <id>89140</id>
+      <timestamp>2009-12-13T18:10:12Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>Undo revision 89121 by [[Special:Contributions/Unlucky8|Unlucky8]] ([[User talk:Unlucky8|Talk]])</comment>
+      <text xml:space="preserve">&lt;includeonly&gt;[[Image:Flag-{{uc:{{{1}}}}}{{#ifexist:{{{2|{{Languages/ThisPageTranslatedIn|{{{1}}} }} }}}||-dark}}.png|link={{{2|{{Languages/ThisPageTranslatedIn|{{{1}}} }} }}}|25px]]&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/Flag/doc</title>
+    <id>22020</id>
+    <revision>
+      <id>114094</id>
+      <timestamp>2010-05-09T20:16:14Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">This template gives a small icon of the language you put as first variable (2 letters, [http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes 639-1 ISO codes]).
+
+If you don't put the second variable, then the template assumes you are checking if the page where you put the template exists in the specified language. &lt;br&gt;
+If you provide a second variable, the flag will link to a page named as that variable.
+
+Examples:
+
+ &lt;nowiki&gt;{{Languages/Flag|fr}}&lt;/nowiki&gt;
+
+returns {{Languages/Flag|fr}} (links to [[Template:FR/Languages/Flag/doc]])
+
+Putting
+
+ &lt;nowiki&gt;{{Languages/Flag|fr|Doc:FR/Manual}}&lt;/nowiki&gt;
+
+returns {{Languages/Flag|fr|Doc:FR/Manual}} (links to [[Doc:FR/Manual]] which exists, hence the bright flag)
+
+ &lt;nowiki&gt;{{Languages/Flag|fr|Doc:FR/doesnt-exist}}&lt;/nowiki&gt;
+
+returns {{Languages/Flag|fr|Doc:FR/doesnt-exist}} (links to [[Doc:FR/doesnt-exist]] which doesn't exist, hence the dark flag)
+
+{{Note|Note|The template code is quite simple, hence you have to know how you are using it. For example:
+
+ &lt;nowiki&gt;{{Languages/Flag|fr|Doc:IT/doesnt-exist}}&lt;/nowiki&gt;
+
+works, but it returns the french flag {{Languages/Flag|fr|Doc:IT/doesnt-exist}} with a link to [[Doc:IT/doesnt-exist]] (not a french page).}}
+
+{{Blend-doc-repository/Template/Languages}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/FlagsRow</title>
+    <id>21629</id>
+    <revision>
+      <id>113065</id>
+      <timestamp>2010-04-24T08:15:19Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">&lt;includeonly&gt;&lt;div class=&quot;languages&quot;&gt;
+{{Languages/Flag|ar}} {{Languages/Flag|bg}} {{Languages/Flag|br}} {{Languages/Flag|ca}} {{Languages/Flag|cz}} {{Languages/Flag|de}} {{Languages/Flag|dk}} {{Languages/Flag|el}} {{Languages/Flag|en}} {{Languages/Flag|es}} {{Languages/Flag|fa}} {{Languages/Flag|fi}} {{Languages/Flag|fr}} {{Languages/Flag|id}} {{Languages/Flag|it}} {{Languages/Flag|ko}} {{Languages/Flag|mn}} {{Languages/Flag|nl}} {{Languages/Flag|pl}} {{Languages/Flag|pt}} {{Languages/Flag|ro}} {{Languages/Flag|ru}} {{Languages/Flag|sv}} {{Languages/Flag|th}} {{Languages/Flag|tr}} {{Languages/Flag|zh}}
+&lt;/div&gt;&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/FlagsRow/doc</title>
+    <id>22017</id>
+    <revision>
+      <id>114095</id>
+      <timestamp>2010-05-09T20:16:29Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">Just put this template in a page to show a flags row: if the page where you put this template has been translated in other languages you'll see bright flags of those languages. Flags of non translated languages will be darkened, to give a visual feedback.
+
+Usage:
+
+ &lt;nowiki&gt;{{Languages/FlagsRow}}&lt;/nowiki&gt;
+
+gives 
+
+{{Languages/FlagsRow}}
+
+{{Blend-doc-repository/Template/Languages}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/LangName</title>
+    <id>21639</id>
+    <revision>
+      <id>114084</id>
+      <timestamp>2010-05-09T16:51:16Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>added new languages</comment>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#switch: {{lc:{{{1|}}}}}| ar=Arabic| bg=Bulgarian| br=Brazilian| ca=Catalan| cz=Czech| de=German| dk=Danish| el=Greek| en=English| es=Spanish| fa=Farsi| fi=Finnish| fr=French| id=Indonesian| it=Italian| ko=Korean| mn=Mongolian | nl=Dutch| pl=Polish| pt=Portuguese| ro=Romanian| ru=Russian| sr=Serbian| sv=Swedish| th=Thai|tr=	Turkish| uk=Ukrainian| zh=Chinese| }}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/LangName/doc</title>
+    <id>26155</id>
+    <revision>
+      <id>114096</id>
+      <timestamp>2010-05-09T20:16:39Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">This template gets a [http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes ISO 639.1 language code] as an input and returns the language name {{Languages/LangName|ar}}.
+
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|ar}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|ar}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|bg}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|bg}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|br}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|br}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|ca}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|ca}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|cz}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|cz}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|de}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|de}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|dk}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|dk}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|en}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|en}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|el}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|el}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|es}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|es}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|fa}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|fa}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|fi}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|fi}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|fr}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|fr}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|id}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|id}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|it}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|it}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|ko}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|ko}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|mn}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|mn}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|nl}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|nl}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|pl}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|pl}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|pt}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|pt}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|ro}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|ro}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|ru}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|ru}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|sr}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|sr}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|sv}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|sv}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|th}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|th}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|tr}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|tr}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|uk}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|uk}}&lt;br&gt;
+&lt;code&gt;&lt;nowiki&gt;{{Languages/LangName|zh}}&lt;/nowiki&gt;&lt;/code&gt; → {{Languages/LangName|zh}}&lt;br&gt;
+
+{{Blend-doc-repository/Template/Languages}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/Language</title>
+    <id>21640</id>
+    <revision>
+      <id>114090</id>
+      <timestamp>2010-05-09T19:16:57Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#if:{{Languages/PageIsEnglish}}
+|{{{1|}}}
+|{{#titleparts:{{PAGENAME}}|1|1}}
+}}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/Language/doc</title>
+    <id>26611</id>
+    <revision>
+      <id>114097</id>
+      <timestamp>2010-05-09T20:16:49Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">This template is used to get the language of the page where you put it in.
+
+If the page where you put this template is in English, the template returns nothing. If the page where you put this template is not in English, the template returns the language of the page.
+
+&lt;u&gt;Example&lt;/u&gt;:
+* in Doc:Manual/Modeling, &lt;nowiki&gt;{{Languages/Language}}&lt;/nowiki&gt; returns nothing
+* in Doc:FR/Manual/Modeling, &lt;nowiki&gt;{{Languages/Language}}&lt;/nowiki&gt; returns &quot;FR&quot;
+
+{{Blend-doc-repository/Template/Languages}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/PageIsEnglish</title>
+    <id>23341</id>
+    <revision>
+      <id>94368</id>
+      <timestamp>2010-02-23T07:55:11Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>greece</comment>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#switch:{{#titleparts:{{{1|{{PAGENAME}}}}}|1}} |AR|BG|BR|CA|CZ|DE|DK|EL|ES|FA|FI|FR|ID|IT|KO|MN|NL|PL|PT|RO|RU|SR|SV|TH|TR|UK|ZH=|this_page_is_english}}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/PageIsEnglish/doc</title>
+    <id>23348</id>
+    <revision>
+      <id>114098</id>
+      <timestamp>2010-05-09T20:16:54Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">If the page where you put this template is not english, this template returns '''nothing''' (it's important to return '''nothing''').
+
+If it's english, it just return &quot;something&quot; (=not &quot;nothing&quot;, it's not important what it returns).
+
+At this moment this is implemented for the following languages:&lt;br&gt;
+AR, BG, BR, CA, CZ, DE, DK, EL, ES, FA, FI, FR, ID, IT, KO, MN, NL, PL, PT, RO, RU, SR, SV, TH, TR, UK, ZH
+
+See also: [http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes List of ISO 639-1 codes]
+
+{{Blend-doc-repository/Template/Languages}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/Section</title>
+    <id>21637</id>
+    <revision>
+      <id>98181</id>
+      <timestamp>2010-03-20T17:28:23Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#if:{{Languages/PageIsEnglish}}
+|{{#switch:{{#titleparts:{{PAGENAME}}|1|1}}
+  |2.4|2.5={{#switch:{{#titleparts:{{PAGENAME}}|1|2}}
+            |Books|Ref|Py={{#titleparts:{{PAGENAME}}|3|1}}
+            |{{#titleparts:{{PAGENAME}}|2|1}}}}
+  |{{#switch:{{#titleparts:{{PAGENAME}}|1|1}}
+    |Books|Ref|Py={{#titleparts:{{PAGENAME}}|2|1}}
+    |{{#titleparts:{{PAGENAME}}|1|1}}}}}}
+|{{#switch:{{#titleparts:{{PAGENAME}}|1|2}}
+  |2.4|2.5={{#switch:{{#titleparts:{{PAGENAME}}|1|3}}
+            |Books|Ref|Py={{#titleparts:{{PAGENAME}}|4|1}}
+            |{{#titleparts:{{PAGENAME}}|3|1}}}}
+  |{{#switch:{{#titleparts:{{PAGENAME}}|1|2}}
+    |Books|Ref|Py={{#titleparts:{{PAGENAME}}|3|1}}
+    |{{#titleparts:{{PAGENAME}}|2|1}}}}}}
+}}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/Section/doc</title>
+    <id>22717</id>
+    <revision>
+      <id>114099</id>
+      <timestamp>2010-05-09T20:17:04Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">This template returns the &quot;section&quot; name, like Manual, Tutorials, and so on.
+
+Examples:
+# if put in Doc:FR/Manual/Data_System/Scene_Creation it returns: FR/Manual
+# if put in Doc:Manual/Data_System/Scene_Creation it returns: Manual
+# if put in Doc:2.5/Manual/Data_System/Scene_Creation it returns: 2.5/Manual
+# if put in Doc:FR/2.5/Manual/Data_System/Scene_Creation it returns: FR/2.5/Manual
+# if put in Doc:2.4/Books/Essential_Blender/02.The_Blender_Interface it returns: 2.4/Books/Essential_Blender
+
+{{Blend-doc-repository/Template/Languages}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/Status</title>
+    <id>21706</id>
+    <revision>
+      <id>86300</id>
+      <timestamp>2009-10-12T09:59:14Z</timestamp>
+      <contributor>
+        <ip>78.180.212.211</ip>
+      </contributor>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#switch: {{#titleparts:{{PAGENAME}}|1|1}} |AR|BG|BR|CA|CZ|DE|DK|ES|FA|FI|FR|ID|IT|KO|NL|PL|PT|RO|RU|SR|SV|TR|UK|ZH={{#ifeq:{{{1|}}}|100
+|{{WikiTask/Done|link={{{link|}}}}}|{{WikiTask/Inprogress| {{{1|0}}}|link={{{link|}}}}} }} | }}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/Status/doc</title>
+    <id>22015</id>
+    <revision>
+      <id>114100</id>
+      <timestamp>2010-05-09T20:17:10Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">When this template is in a localization page (i.e. [[Doc:FR/Manual/Vitals/Screenshots]]) it shows a [[Template:WikiTask/Inprogress|progressbar]].&lt;br&gt;
+
+It is used in the navigation template so be careful while editing this template.
+
+{{Blend-doc-repository/Template/Languages}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/ThisPageTranslatedIn</title>
+    <id>21627</id>
+    <revision>
+      <id>89842</id>
+      <timestamp>2010-01-04T18:23:27Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>I've put all languages in a single template so there's only one place we have to update when new languages come: Languages/PageIsEnglish -&gt; I'm using it</comment>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#ifeq:{{uc:{{{1}}}}}|EN|
+{{#if:{{Languages/PageIsEnglish}}
+|{{Namespace}}{{PAGENAME}}
+|{{Namespace}}{{#titleparts:{{PAGENAME}}||2}}
+}}
+|
+{{#if:{{Languages/PageIsEnglish}}
+|{{Namespace}}{{uc:{{{1}}}}}/{{PAGENAME}}
+|{{Namespace}}{{uc:{{{1}}}}}/{{#titleparts:{{PAGENAME}}||2}}
+}}
+}}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/ThisPageTranslatedIn/doc</title>
+    <id>22018</id>
+    <revision>
+      <id>114101</id>
+      <timestamp>2010-05-09T20:17:18Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">This template returns the localized version of the page title where you put it, in the language you choose (2 letters, [http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes 639-1 ISO codes]).
+
+Usage:
+
+ &lt;nowiki&gt;{{Languages/ThisPageTranslatedIn|ko}}&lt;/nowiki&gt;
+
+in this page, returns:
+
+{{Languages/ThisPageTranslatedIn|ko}}
+
+ &lt;nowiki&gt;{{Languages/ThisPageTranslatedIn|ko}}&lt;/nowiki&gt;
+
+in [[Doc:FR/Manual/Vitals/Screenshots]], returns:&lt;br&gt;
+
+Doc:KO/Manual/Vitals/Screenshots
+
+{{Blend-doc-repository/Template/Languages}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:IsUpper</title>
+    <id>23325</id>
+    <revision>
+      <id>114073</id>
+      <timestamp>2010-05-09T15:34:01Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#ifeq:{{ucfirst:{{{1|}}}}}|{{{1|}}}|1|0}}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:LastPart</title>
+    <id>23326</id>
+    <revision>
+      <id>89791</id>
+      <timestamp>2010-01-04T01:03:12Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>Created page with '{{#titleparts:{{{1|}}}|1|-1}}'</comment>
+      <text xml:space="preserve">{{#titleparts:{{{1|}}}|1|-1}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Multiply</title>
+    <id>21959</id>
+    <revision>
+      <id>82941</id>
+      <timestamp>2009-08-29T17:24:58Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>it's preferrable it returns nothing istead of errors</comment>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#switch:{{{2|}}}
+|1={{{1|}}}
+|2={{{1|}}}{{{1|}}}
+|3={{{1|}}}{{{1|}}}{{{1|}}}
+|4={{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}
+|5={{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}
+|6={{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}
+|7={{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}
+|8={{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}
+|9={{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}
+|10={{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}
+|}}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:PagetitlePartsAmount</title>
+    <id>21961</id>
+    <revision>
+      <id>82945</id>
+      <timestamp>2009-08-29T17:54:22Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>Created page with '{{#switch: |{{#titleparts:{{{1}}}|1|2}}=1 |{{#titleparts:{{{1}}}|1|3}}=2 |{{#titleparts:{{{1}}}|1|4}}=3 |{{#titleparts:{{{1}}}|1|5}}=4 |{{#titleparts:{{{1}}}|1|6}}=5 |{{#titlepar…'</comment>
+      <text xml:space="preserve">{{#switch:
+|{{#titleparts:{{{1}}}|1|2}}=1
+|{{#titleparts:{{{1}}}|1|3}}=2
+|{{#titleparts:{{{1}}}|1|4}}=3
+|{{#titleparts:{{{1}}}|1|5}}=4
+|{{#titleparts:{{{1}}}|1|6}}=5
+|{{#titleparts:{{{1}}}|1|7}}=6
+|{{#titleparts:{{{1}}}|1|8}}=7
+|{{#titleparts:{{{1}}}|1|9}}=8
+|{{#titleparts:{{{1}}}|1|10}}=9
+|{{#titleparts:{{{1}}}|1|11}}=10
+|{{#titleparts:{{{1}}}|1|12}}=11
+|{{#titleparts:{{{1}}}|1|13}}=12
+|{{#titleparts:{{{1}}}|1|14}}=13
+|{{#titleparts:{{{1}}}|1|15}}=14
+|{{#titleparts:{{{1}}}|1|16}}=15
+|{{#titleparts:{{{1}}}|1|17}}=16
+|{{#titleparts:{{{1}}}|1|18}}=17
+|{{#titleparts:{{{1}}}|1|19}}=18
+|{{#titleparts:{{{1}}}|1|20}}=19
+|{{#titleparts:{{{1}}}|1|21}}=20
+|{{#titleparts:{{{1}}}|1|22}}=21
+|{{#titleparts:{{{1}}}|1|23}}=22
+|{{#titleparts:{{{1}}}|1|24}}=23
+|{{#titleparts:{{{1}}}|1|25}}=24
+|#default=&lt;span style=&quot;color:red; font-weight:bold&quot;&gt;{{#if:{{{1|}}}
+	|Page {{{1}}} has more than 25 parts, can't process this...
+	|[[Template:PagetitlePartsAmount]]: missing variable...}}&lt;/span&gt;}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Subpages</title>
+    <id>16835</id>
+    <revision>
+      <id>91892</id>
+      <timestamp>2010-01-26T15:00:37Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#dpl:
+  |debug=0
+  |mode=ordered
+  |namespace={{NAMESPACE}}
+  |titlematch={{PAGENAME}}/%
+  |shownamespace=false
+  |format= &lt;br&gt;'''Subpages'''&lt;br&gt;,²{#ifeq:²{IsUpper¦²{LastPart¦%PAGE%}²}²¦1¦\n#[[%PAGE%|²{Multiply¦&amp;nbsp;&amp;nbsp;&amp;nbsp;¦²{#expr:²{PagetitlePartsAmount¦%TITLE%}²-²{PagetitlePartsAmount¦²{PAGENAME}² }² -1 }² }²²{LastPart¦%TITLE%}² ]]¦}²,,
+}}&lt;/includeonly&gt;&lt;!--
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Documentation</title>
+    <id>21922</id>
+    <revision>
+      <id>114062</id>
+      <timestamp>2010-05-09T14:40:45Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>Undo revision 114058 by [[Special:Contributions/Mindrones|Mindrones]] ([[User talk:Mindrones|Talk]])</comment>
+      <text xml:space="preserve">&lt;includeonly&gt;
+{{#ifexist:{{FULLPAGENAME}}/doc|{{{{FULLPAGENAME}}/doc}}|}}&lt;/includeonly&gt;
+&lt;noinclude&gt;{{Template:Documentation/doc}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Namespace</title>
+    <id>22063</id>
+    <revision>
+      <id>83425</id>
+      <timestamp>2009-09-03T11:16:54Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>Protected &quot;[[Template:Namespace]]&quot; ([edit=sysop] (indefinite) [move=sysop] (indefinite))</comment>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#ifeq:{{NAMESPACE}}|||{{NAMESPACE}}:}}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Note</title>
+    <id>1297</id>
+    <revision>
+      <id>87296</id>
+      <timestamp>2009-11-02T19:40:17Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">&lt;includeonly&gt;{|style=&quot;width:400px; margin-top:5px; margin-bottom:5px; margin-left:auto; margin-right:auto; border:1px solid #aaa;&quot;
+|-
+|&lt;div style=&quot;text-align:center; font-weight:bold; border:1px solid #aaa; padding:2px; margin:1px; background:#777;&quot;&gt;{{{1|Note}}}&lt;/div&gt;
+&lt;div style=&quot;padding:2px; margin:2px;&quot;&gt;{{{2}}}&lt;/div&gt;
+|}&lt;/includeonly&gt;
+&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+</mediawiki>

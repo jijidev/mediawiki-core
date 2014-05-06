@@ -1,0 +1,133 @@
+HOW TO REPRODUCE WIKI.BLENDER.ORG's ASPECT IN A LOCAL WIKI, THE FIRST TIME
+========================================================================
+
+# Getting files from blend-doc SVN and setting up
+------------------------------------------------------------------------
+	
+* Enter your mediawiki installation, for example "/var/wwww/mediawiki"
+  (as a superuser, if needed in your system)
+
+* Move LocalSettings.php to LocalSettings_original.php, skins/ to
+  skins_original/ and extensions/ to extensions_original/
+
+* Checkout from our doc svn with
+  # svn co https://svn.blender.org/svnroot/blend-doc/trunk/wiki/mediawiki/ .
+
+  This will download Localsettings.php, Localsettings_pre.php.sample,
+  Localsettings_post.php.sample, skins/ and extensions/ folders
+
+* COPY Localsettings_pre.php.sample to Localsettings_pre.php, and
+  COPY Localsettings_post.php.sample to Localsettings_post.php
+
+  NOTE: don't "svn mv" them or (if you have svn write permissions) you might
+  commit them back in svn with your passwords and private setups
+
+* Enter in _pre and _post files and change php variables depending on
+  your local setup (passwords, host, etc). You don't need to restart your
+  server after each modification, just refresh the pages to test.
+  The files are documented, it shouldn't be difficult to undestand: if
+  all goes well, you should see the wiki.blender.org skin in your local wiki.
+
+* In extensions/SyntaxHighlight_GeSHi/SyntaxHighlight_GeSHi.class.php,
+  in function "initialise()" change from 
+  '/data/www/vhosts/wiki.blender.org/mediawiki-1.6.7/extensions/SyntaxHighlight_GeSHi/geshi/geshi.php'
+  to your local absolute path for geshi.php, for example
+  '/var/www/mediawiki/extensions/SyntaxHighlight_GeSHi/geshi/geshi.php'
+  
+  NOTE: If you're a blend-doc committer, be sure to do a
+  # svn revert extensions/SyntaxHighlight_GeSHi/SyntaxHighlight_GeSHi.class.php
+  before you do a svn checkin or this would have to be fixed each time before 
+  applying to wiki.blender.org. Check things with
+  # svn status
+  You shouldn't see the geshi.php file in the resulting list.
+  Will be fixes asap.
+
+
+# Setup the 301 redirect, also called "permanent redirect"
+------------------------------------------------------------------------
+
+* Enter your mediawiki installation folder (as a superuser, if needed in your system)
+
+* In includes/Article.php, in function "followRedirectText":
+  return $rt;
+  has to become 
+  return $rt->getFullUrl();
+
+* In includes/Wiki.php, in function "initialize":
+  $output->redirect( $article );
+  has to become 
+  $output->redirect( $article , "301" );
+
+* You don't need to restart your server after these modifications, just
+  refresh the pages to test.
+	
+* In a page of your choice, say "Test", enter
+  #REDIRECT [[Main_Page]]
+  and save.
+
+* By visiting "Test" you should silently be redirected to "Main Page".
+
+
+# Import images, files and templates
+------------------------------------------------------------------------
+	
+* Enter your mediawiki installation folder (as a superuser, if needed in your system)
+
+* Import templates and related images
+  # php maintenance/importImages.php wiki.blender.org/imports/files/flags --overwrite
+  # php maintenance/importDump.php wiki.blender.org/imports/templates/Templates-Languages.xml
+  # php maintenance/importDump.php wiki.blender.org/imports/templates/Templates-Page.xml
+  # php maintenance/importDump.php wiki.blender.org/imports/templates/MediaWiki-General.xml
+  # php maintenance/importDump.php wiki.blender.org/imports/templates/MediaWiki-CSS.xml
+  # php maintenance/rebuildall.php
+
+
+RESULTANT FILES LAYOUT
+========================================================================
+
+* wiki.blender.org/
+	files to be imported in local wikis
+
+* wiki.blender.org/README
+	this file itself: docs about how to maintain own wiki aspect same as wiki.blender.org
+
+* wiki.blender.org/imports/files/flags/
+	flag images for languages templates
+
+* wiki.blender.org/imports/templates/
+	xml dumps of some important templates
+		
+
+HOW TO KEEP YOUR LOCAL WIKI UP TO DATE WITH BLEND-DOC's SVN
+========================================================================
+
+# Getting files from blend-doc SVN
+------------------------------------------------------------------------
+
+* Enter you mediawiki installation (as a superuser, if needed in your system)
+
+* Checkout from our doc svn, with
+  # svn up
+
+
+# Keeping files and templates up to date
+------------------------------------------------------------------------
+
+* Have a read at the svn log with
+  # svn log
+  or, to limit the output,
+  # svn log --limit 5
+  
+  NOTE: If you see jumps in the revision numbers, this is normal, we use 
+  blend-doc svn to commit stuff in other paths other than mediawiki/
+
+* If there has been commits in wiki.blender.org/imports then run the relative 
+  maintenance script, see the commands above.
+  
+  For example if there are commits in wiki.blender.org/imports/files/flags/,
+  then run
+  # php maintenance/importImages.php wiki.blender.org/imports/files/flags --overwrite
+  
+  NOTE: If you run maintenance scripts, always run maintenance/rebuildall.php 
+  at last.
+	  

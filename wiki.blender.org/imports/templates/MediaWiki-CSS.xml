@@ -1,0 +1,993 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.3/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.3/ http://www.mediawiki.org/xml/export-0.3.xsd" version="0.3" xml:lang="en">
+  <siteinfo>
+    <sitename>BlenderWiki</sitename>
+    <base>http://wiki.blender.org/index.php/Main_Page</base>
+    <generator>MediaWiki 1.15.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2">Media</namespace>
+      <namespace key="-1">Special</namespace>
+      <namespace key="0" />
+      <namespace key="1">Talk</namespace>
+      <namespace key="2">User</namespace>
+      <namespace key="3">User talk</namespace>
+      <namespace key="4">BlenderWiki</namespace>
+      <namespace key="5">BlenderWiki talk</namespace>
+      <namespace key="6">File</namespace>
+      <namespace key="7">File talk</namespace>
+      <namespace key="8">MediaWiki</namespace>
+      <namespace key="9">MediaWiki talk</namespace>
+      <namespace key="10">Template</namespace>
+      <namespace key="11">Template talk</namespace>
+      <namespace key="12">Help</namespace>
+      <namespace key="13">Help talk</namespace>
+      <namespace key="14">Category</namespace>
+      <namespace key="15">Category talk</namespace>
+      <namespace key="100">Doc</namespace>
+      <namespace key="101">Doc talk</namespace>
+      <namespace key="102">Extensions</namespace>
+      <namespace key="103">Extensions talk</namespace>
+      <namespace key="104">Dev</namespace>
+      <namespace key="105">Dev talk</namespace>
+      <namespace key="106">Org</namespace>
+      <namespace key="107">Org talk</namespace>
+      <namespace key="108">Meta</namespace>
+      <namespace key="109">Meta talk</namespace>
+      <namespace key="110">Attic</namespace>
+      <namespace key="111">Attic talk</namespace>
+      <namespace key="112">Robotics</namespace>
+      <namespace key="113">Robotics talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>MediaWiki:Common.css</title>
+    <id>5808</id>
+    <revision>
+      <id>111040</id>
+      <timestamp>2010-04-13T10:43:52Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">/* &lt;pre&gt; */
+
+/* CSS placed here will be applied to all skins
+
+   Site-wide Custom CSS
+   This CSS is live
+   Please be nice.
+
+*/
+
+h1 {
+ margin-top: 36px;
+}
+
+h3 {
+ margin-top: 9px;
+}
+
+a.new {
+  color: #BB0011 !important;
+  /*#F39410;*/
+}
+
+.tableNormal {
+  background-color: #f9f9f9;
+  border: 1px #aaa solid;
+  margin-top:1em;
+  padding-left:1em;
+  padding-right:1em;
+  padding-bottom:1em;
+}
+
+.columnHalf {
+  width: 50%;
+  float: left;
+}
+
+.columnThird {
+  width: 33.3%;
+  float: left;
+}
+
+.clearBoth {
+  clear: both;
+} 
+
+/* for the hotkey templates */
+span.hotkeybg {
+  background-color: #EAEAEA;
+  padding: 2px 1px 2px 1px;
+  white-space: nowrap;
+}
+
+span.hotkey {
+  padding: 0px 3px 0px 3px;
+  background-color: #D8D8D8;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #f2f2f2 #a7a7a7 #838383 #e3e3e3;
+}
+/* to position the mouse icon properly in the hotkey template */
+span.hotkeybg img {
+ margin-bottom: 5px;
+ padding-right: 1px;
+ border: 0px;
+}
+
+div.refbox {
+ width: auto;
+ padding: 0px 8px 2px 8px;
+ background-color: #EDEDED;
+ border: 1px solid #D1D1D1;
+}
+div.refbox span.item {
+ font-weight: bold;
+ font-size: 1.2em;
+}
+
+li {
+ padding: 1px;
+}
+
+/* ---------------------- TABLES FORMATS ------------------------ */
+
+/* ------------------------ prettytable ------------------------- */
+
+table.prettytable {
+/*width=&quot;{{{1|100%}}}&quot; border=&quot;2&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;*/
+margin: 1em 1em 1em 0; 
+/*border: 1px #aaa solid;*/ 
+border-collapse: collapse;
+width: 100%
+}
+
+.prettytable td, .prettytable th {
+border: 1px #aaa solid;
+margin: 0px;
+padding: 4px 2px 3px 5px;
+}
+
+/* ------------------------- TEMPLATES --------------------------- */
+
+/* ------------- Template:Languages/TranslatorNote --------------- */
+
+table.languages-translatornote {
+margin: 5px 2.5%;
+padding:0px 5px 0px 5px;
+border:1px solid #e1da95;
+background: #66655c;
+width:95%;
+}
+
+/* ------------------------------------------------------------- */
+
+/* &lt;/pre&gt; */</text>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Blender.css</title>
+    <id>12422</id>
+    <revision>
+      <id>99571</id>
+      <timestamp>2010-04-02T14:40:35Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">/* 
+&lt;pre&gt; */
+
+body #article, body #bodyContent {text-align:left;}
+
+/* wordwrap is &quot;white-space&quot; and &quot;word-wrap&quot; */
+pre {
+  background-color: #555555;
+  padding: 10px;
+  white-space: pre-wrap; /* css-3 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+a.new {
+  color: #BB0011 !important;
+}
+
+div.maintoc table {
+        width: 100%;
+}
+
+div.maintoc td {
+        width: 50%;
+}
+div.maintoc dt {
+        font-size: 102%;
+        font-weight: bold;
+}
+
+div.languages {
+        border:1px solid #AAAAAA;
+        padding: 5px 10px 5px 10px;
+        margin-bottom: -1px;
+}
+
+div.navigator {
+        border:1px solid #AAAAAA;
+        padding: 5px;
+        margin-top: 0 px;
+        margin-bottom: 10px;
+        text-align: center;
+}
+
+.usermessage { 
+    color:black;
+    background-color: #cd5600; 
+    border: 0px solid white; 
+    font-weight: bold; 
+    margin: 0em 0em 1em 0em; 
+    padding: 0.5em 1em; 
+    vertical-align: middle; 
+} 
+
+.usermessage a {
+   color:  white;
+}
+
+div.thumb {
+   background-color: #555;
+}
+
+.tableNormal {
+  background-color: #333333;
+  border: 1px #aaa solid;
+  margin-top:1em;
+  padding-left:1em;
+  padding-right:1em;
+  padding-bottom:1em;
+}
+
+.columnHalf {
+  width: 50%;
+  float: left;
+}
+
+.columnThird {
+  width: 33.3%;
+  float: left;
+}
+
+.clearBoth {
+  clear: both;
+}
+
+div.bsod {
+  border:1px solid #aaa;
+  padding:1px;
+  background:#333;
+  text-align:center;
+  margin-bottom:10px;
+}
+
+span.hotkey {
+  color: #000;
+}
+
+.literal {
+  color: #eeeeee;
+  white-space:nowrap;
+  font-style: italic;
+}
+
+.NiceTip {
+  margin:5px;
+  padding:5px;
+  border:1px solid #ddd;
+  background: #555; 
+  color: #999;
+}
+
+span.hotkeybg {
+  padding-left: 3px;
+  color: #fff;
+  background-color: #555;
+}
+
+span.hotkeybg img {
+  bottom: -2px;
+}
+div.refbox {
+ background-color: #333;
+}
+
+/*
+** Diff rendering
+*/
+table.diff, td.diff-otitle, td.diff-ntitle {background-color: #333;color:#fff;}
+td.diff-otitle,td.diff-ntitle {text-align: center;}
+td.diff-marker {text-align: right;font-size:18px;font-weight:bold;padding:3px;text-align:center;}
+.rtl td.diff-marker {text-align: left;}
+table.diff td.diff-lineno {padding-left:15px;font-weight: bold;}
+
+td.diff-addedline {background: #cfc;font-size: smaller;}
+td.diff-deletedline {background: #ffa;font-size: smaller;}
+
+table.diff {border: none;width: 98%;border-spacing: 4px;    
+    /* Fixed layout is required to ensure that cells containing long URLs
+       don't widen in Safari, Internet Explorer, or iCab */
+    table-layout: fixed;}
+table.diff td {    padding: 0;}
+table.diff col.diff-marker {width: 2%;}
+table.diff col.diff-content {width: 48%;}
+table.diff td div {
+    /* Force-wrap very long lines such as URLs or page-widening char strings.
+       CSS 3 draft..., but Gecko doesn't support it yet:
+       https://bugzilla.mozilla.org/show_bug.cgi?id=99457 */
+    word-wrap: break-word;
+    
+    /* As fallback, scrollbars will be added for very wide cells
+       instead of text overflowing or widening */
+    overflow: auto;
+    
+    /* The above rule breaks on very old versions of Mozilla due
+       to a bug which collapses the table cells to a single line.
+       
+       In Mozilla 1.1 and below with JavaScript enabled, the rule
+       will be overridden with this by diff.js; wide cell contents
+       then spill horizontally without widening the rest of the
+       table: */
+    /* overflow: visible; */
+}
+
+
+/*Diff in this file*/
+td.diff-context div, td.diff-addedline div, td.diff-deletedline div{font-size:12px;padding:5px}
+td.diff-context div {background: #666;color:#bbb;}
+td.diff-addedline div{background-color: #caFFc1;color: black;}
+td.diff-deletedline div{background-color: #f9ffbb;color: black;}
+
+.diffchange {font-weight:bold;text-decoration:none;/*background-color: #FFCDF3;*/}
+del.diffchange{text-decoration:line-through;color: red;}
+ins.diffchange{color: red;}
+
+.autocomment { color:  grey; }
+#pagehistory span.user {margin-left: 1.4em;margin-right: 0.4em;}
+#pagehistory span.minor {font-weight: bold;}
+#pagehistory li.selected {background-color: #292929; border:1px dashed #aaaaaa;}
+
+
+/* this is to see geshi css in this page itself please dont remove even if it seems redundant */
+pre.source-css {background-color:#000000;}
+
+/* 
+&lt;/pre&gt; */</text>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Geshi.css</title>
+    <id>26190</id>
+    <revision>
+      <id>117984</id>
+      <timestamp>2010-05-28T16:24:59Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">/* 
+&lt;pre&gt; */
+
+/* CSS placed here will be applied to GeSHi syntax highlighting */
+
+/* -------------------------- lang=&quot;python&quot; --------------------------- */
+
+/* CSS based on the original one (below), main changes COLORS INVERTED */
+.source-python {line-height: normal; font-family: monospace;}
+.source-python li, .source-python pre {line-height: normal; border: 0px none white; background-color: #000000;}
+.source-python .de1, .source-python .de2 {font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-python .imp {font-weight: bold; color: #00FFFF;}
+.source-python li, .source-python li.li1 {font-weight: normal;}
+.source-python li.li2 {font-weight: bold;}
+.source-python .kw1 {color: #0088FF;font-weight:bold;}
+.source-python .kw2 {color: #FF7FFF;}
+.source-python .kw3 {color: #23EBC3;}
+.source-python .kw4 {color: #FFFF32;}
+.source-python .co1 {color: #7F7F7F; font-style: italic;}
+.source-python .coMULTI {color: #7F7F7F; font-style: italic;}
+.source-python .es0 {color: #FFFF66; font-weight: bold;}
+.source-python .br0 {color: #FFFFFF;}
+.source-python .sy0 {color: #993399;}
+.source-python .st0 {color: #B7C274;}
+.source-python .nu0 {color: #00BAFF;}
+.source-python .me1 {color: #FFFFFF;}
+.source-python .ln-xtra, .source-python li.ln-xtra, .source-python div.ln-xtra {background-color: #000033;}
+.source-python span.xtra { display:block; }
+
+/* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter)
+.source-python {line-height: normal;}
+.source-python li, .source-python pre {line-height: normal; border: 0px none white;}
+.source-python .de1, .source-python .de2 {font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-python .imp {font-weight: bold; color: red;}
+.source-python li, .source-python li.li1 {font-weight: normal;}
+.source-python li.li2 {font-weight: bold;}
+.source-python .kw1 {color: #ff7700;font-weight:bold;}
+.source-python .kw2 {color: #008000;}
+.source-python .kw3 {color: #dc143c;}
+.source-python .kw4 {color: #0000cd;}
+.source-python .co1 {color: #808080; font-style: italic;}
+.source-python .coMULTI {color: #808080; font-style: italic;}
+.source-python .es0 {color: #000099; font-weight: bold;}
+.source-python .br0 {color: black;}
+.source-python .sy0 {color: #66cc66;}
+.source-python .st0 {color: #483d8b;}
+.source-python .nu0 {color: #ff4500;}
+.source-python .me1 {color: black;}
+.source-python .ln-xtra, .source-python li.ln-xtra, .source-python div.ln-xtra {background-color: #ffc;}
+.source-python span.xtra { display:block; } */
+
+
+/* -------------------------- lang=&quot;c&quot; --------------------------- */
+
+/* CSS based on the original one (below), main changes COLORS INVERTED */
+.source-c {line-height: normal; font-family: monospace;}
+.source-c li, .source-c pre {line-height: normal; border: 0px none white; background-color: #000000}
+.source-c .de1, .source-c .de2 {font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-c .imp {font-weight: bold; color: #00FFFF;}
+.source-c li, .source-c li.li1 {font-weight: normal;}
+.source-c li.li2 {font-weight: bold;}
+.source-c .kw1 {color: #4E4EFF;}
+.source-c .kw2 {color: #FFFFFF; font-weight: bold;}
+.source-c .kw3 {color: #FFFF99;}
+.source-c .kw4 {color: #66CCCC;}
+.source-c .co1 {color: #999999; font-style: italic;}
+.source-c .co2 {color: #CC66CC;}
+.source-c .coMULTI {color: #7F7F7F; font-style: italic;}
+.source-c .es0 {color: #FFFF66; font-weight: bold;}
+.source-c .br0 {color: #FF66FF;}
+.source-c .sy0 {color: #CC66CC;}
+.source-c .st0 {color: #00FFFF;}
+.source-c .nu0 {color: #339933;}
+.source-c .me1 {color: #DFDFDF;}
+.source-c .me2 {color: #DFDFDF;}
+.source-c .ln-xtra, .source-c li.ln-xtra, .source-c div.ln-xtra {background-color: #000033;}
+.source-c span.xtra { display:block; }
+
+/* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter)
+.source-c {line-height: normal;}
+.source-c li, .source-c pre {line-height: normal; border: 0px none white;}
+.source-c .de1, .source-c .de2 {font-family: monospace; font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-c .imp {font-weight: bold; color: red;}
+.source-c li, .source-c li.li1 {font-weight: normal;}
+.source-c li.li2 {font-weight: bold;}
+.source-c .kw1 {color: #b1b100;}
+.source-c .kw2 {color: #000000; font-weight: bold;}
+.source-c .kw3 {color: #000066;}
+.source-c .kw4 {color: #993333;}
+.source-c .co1 {color: #666666; font-style: italic;}
+.source-c .co2 {color: #339933;}
+.source-c .coMULTI {color: #808080; font-style: italic;}
+.source-c .es0 {color: #000099; font-weight: bold;}
+.source-c .br0 {color: #009900;}
+.source-c .sy0 {color: #339933;}
+.source-c .st0 {color: #ff0000;}
+.source-c .nu0 {color: #cc66cc;}
+.source-c .me1 {color: #202020;}
+.source-c .me2 {color: #202020;}
+.source-c .ln-xtra, .source-c li.ln-xtra, .source-c div.ln-xtra {background-color: #ffc;}
+.source-c span.xtra { display:block; } */
+
+
+/* -------------------------- lang=&quot;cpp&quot; --------------------------- */
+
+/* CSS based on the original one (below), main changes COLORS INVERTED */
+
+.source-cpp {line-height: normal; font-family: monospace;}
+.source-cpp li, .source-cpp pre {line-height: normal; border: 0px none white; background-color: #000000;}
+.source-cpp .de1, .source-cpp .de2 {font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-cpp .imp {font-weight: bold; color: #00FFFF;}
+.source-cpp li, .source-cpp li.li1 {font-weight: normal;}
+.source-cpp li.li2 {font-weight: bold;}
+.source-cpp .kw1 {color: #FFFF00;}
+.source-cpp .kw2 {color: #FFFF00;}
+.source-cpp .kw3 {color: #FFFF22;}
+.source-cpp .kw4 {color: #FFFF00;}
+.source-cpp .co1 {color: #999999;}
+.source-cpp .co2 {color: #CC66FF;}
+.source-cpp .coMULTI {color: #00FFFF; font-style: italic;}
+.source-cpp .es0 {color: #999999; font-weight: bold;}
+.source-cpp .br0 {color: #FF7FFF;}
+.source-cpp .sy0 {color: #FF7FFF;}
+.source-cpp .sy1 {color: #FFFF7F;}
+.source-cpp .sy2 {color: #FFFFBF;}
+.source-cpp .sy3 {color: #FFFFBF;}
+.source-cpp .sy4 {color: #FF7F7F;}
+.source-cpp .st0 {color: #00FFFF;}
+.source-cpp .nu0 {color: #FFFF22;}
+.source-cpp .me1 {color: #FF1100;}
+.source-cpp .me2 {color: #FF1100;}
+.source-cpp .ln-xtra, .source-cpp li.ln-xtra, .source-cpp div.ln-xtra {background-color: #000033;}
+.source-cpp span.xtra { display:block; }
+
+/* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter)
+
+.source-cpp {line-height: normal;}
+.source-cpp li, .source-cpp pre {line-height: normal; border: 0px none white;}
+.source-cpp .de1, .source-cpp .de2 {font-family: monospace; font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-cpp .imp {font-weight: bold; color: red;}
+.source-cpp li, .source-cpp li.li1 {font-weight: normal;}
+.source-cpp li.li2 {font-weight: bold;}
+.source-cpp .kw1 {color: #0000ff;}
+.source-cpp .kw2 {color: #0000ff;}
+.source-cpp .kw3 {color: #0000dd;}
+.source-cpp .kw4 {color: #0000ff;}
+.source-cpp .co1 {color: #666666;}
+.source-cpp .co2 {color: #339900;}
+.source-cpp .coMULTI {color: #ff0000; font-style: italic;}
+.source-cpp .es0 {color: #666666; font-weight: bold;}
+.source-cpp .br0 {color: #008000;}
+.source-cpp .sy0 {color: #008000;}
+.source-cpp .sy1 {color: #000080;}
+.source-cpp .sy2 {color: #000040;}
+.source-cpp .sy3 {color: #000040;}
+.source-cpp .sy4 {color: #008080;}
+.source-cpp .st0 {color: #FF0000;}
+.source-cpp .nu0 {color: #0000dd;}
+.source-cpp .me1 {color: #00eeff;}
+.source-cpp .me2 {color: #00eeff;}
+.source-cpp .ln-xtra, .source-cpp li.ln-xtra, .source-cpp div.ln-xtra {background-color: #ffc;}
+.source-cpp span.xtra { display:block; } */
+
+
+/* -------------------------- lang=&quot;bash&quot; --------------------------- */
+
+/* CSS based on the original one (below), main changes COLORS INVERTED */
+
+.source-bash {line-height: normal; font-family: monospace;}
+.source-bash li, .source-bash pre {line-height: normal; border: 0px none white; background-color: #000000;}
+.source-bash .de1, .source-bash .de2 {font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-bash .imp {font-weight: bold; color: #00FFFF;}
+.source-bash li, .source-bash li.li1 {font-weight: normal;}
+.source-bash li.li2 {font-weight: bold;}
+.source-bash .kw1 {color: #FFFFFF; font-weight: bold;}
+.source-bash .kw2 {color: #3DF346; font-weight: bold;}
+.source-bash .kw3 {color: #85F78B; font-weight: bold;}
+.source-bash .co0 {color: #999999; font-style: italic;}
+.source-bash .co1 {color: #7FFFFF;}
+.source-bash .co2 {color: #33FFFF; font-style: italic;}
+.source-bash .es0 {color: #FFFF66; font-weight: bold;}
+.source-bash .br0 {color: #85F78B; font-weight: bold;}
+.source-bash .sy0 {color: #FFFFFF; font-weight: bold;}
+.source-bash .st0 {color: #00FFFF;}
+.source-bash .nu0 {color: #FFFFFF;}
+.source-bash .re0 {color: #FF87FF;}
+.source-bash .re1 {color: #FF87FF;}
+.source-bash .re2 {color: #FF87FF;}
+.source-bash .re4 {color: #FF87FF;}
+.source-bash .re5 {color: #99FFCC;}
+.source-bash .ln-xtra, .source-bash li.ln-xtra, .source-bash div.ln-xtra {background-color: #000033;}
+.source-php span.xtra { display:block; }
+
+/* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter)
+
+.source-bash {line-height: normal;}
+.source-bash li, .source-bash pre {line-height: normal; border: 0px none white;}
+.source-bash .de1, .source-bash .de2 {font-family: monospace; font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-bash .imp {font-weight: bold; color: red;}
+.source-bash li, .source-bash li.li1 {font-weight: normal;}
+.source-bash li.li2 {font-weight: bold;}
+.source-bash .kw1 {color: #000000; font-weight: bold;}
+.source-bash .kw2 {color: #c20cb9; font-weight: bold;}
+.source-bash .kw3 {color: #7a0874; font-weight: bold;}
+.source-bash .co0 {color: #666666; font-style: italic;}
+.source-bash .co1 {color: #800000;}
+.source-bash .co2 {color: #cc0000; font-style: italic;}
+.source-bash .es0 {color: #000099; font-weight: bold;}
+.source-bash .br0 {color: #7a0874; font-weight: bold;}
+.source-bash .sy0 {color: #000000; font-weight: bold;}
+.source-bash .st0 {color: #ff0000;}
+.source-bash .nu0 {color: #000000;}
+.source-bash .re0 {color: #007800;}
+.source-bash .re1 {color: #007800;}
+.source-bash .re2 {color: #007800;}
+.source-bash .re4 {color: #007800;}
+.source-bash .re5 {color: #660033;}
+.source-bash .ln-xtra, .source-bash li.ln-xtra, .source-bash div.ln-xtra {background-color: #ffc;}
+.source-bash span.xtra { display:block; } */
+
+
+/* -------------------------- lang=&quot;perl&quot; --------------------------- */
+
+/* CSS based on the original one (below), main changes COLORS INVERTED */
+
+.source-perl {line-height: normal;}
+.source-perl li, .source-perl pre {line-height: normal; border: 0px none white; background: rgb(0,0,0);}
+.source-perl .de1, .source-perl .de2 {font-family: monospace; font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-perl  {font-family: monospace;}
+.source-perl .imp {font-weight: bold; color: #00FFFF;}
+.source-perl li, .source-perl li.li1 {font-weight: normal;}
+.source-perl li.li2 {font-weight: bold;}
+.source-perl .kw1 {color: #4E4EFF;}
+.source-perl .kw2 {color: #FFFFFF; font-weight: bold;}
+.source-perl .kw3 {color: #FFFF99;}
+.source-perl .co1 {color: #999999; font-style: italic;}
+.source-perl .co2 {color: #FF6699; font-style: italic;}
+.source-perl .co3 {color: #FFFF00;}
+.source-perl .co4 {color: #33FFFF; font-style: italic;}
+.source-perl .co5 {color: #FFFF00;}
+.source-perl .coMULTI {color: #999999; font-style: italic;}
+.source-perl .es0 {color: #FFFF66; font-weight: bold;}
+.source-perl .br0 {color: #FF66FF;}
+.source-perl .sy0 {color: #CC66CC;}
+.source-perl .st0 {color: #00FFFF;}
+.source-perl .nu0 {color: #339933;}
+.source-perl .me1 {color: #FF99FF;}
+.source-perl .me2 {color: #FF99FF;}
+.source-perl .re0 {color: #FFFF00;}
+.source-perl .re4 {color: #FF6666;}
+.source-perl .ln-xtra, .source-perl li.ln-xtra, .source-perl div.ln-xtra {background-color: #000033;}
+.source-perl span.xtra { display:block; }
+
+/* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter)
+
+.source-perl {line-height: normal;}
+.source-perl li, .source-perl pre {line-height: normal; border: 0px none white;}
+.source-perl .de1, .source-perl .de2 {font-family: monospace; font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-perl  {font-family: monospace;}
+.source-perl .imp {font-weight: bold; color: red;}
+.source-perl li, .source-perl li.li1 {font-weight: normal;}
+.source-perl li.li2 {font-weight: bold;}
+.source-perl .kw1 {color: #b1b100;}
+.source-perl .kw2 {color: #000000; font-weight: bold;}
+.source-perl .kw3 {color: #000066;}
+.source-perl .co1 {color: #666666; font-style: italic;}
+.source-perl .co2 {color: #009966; font-style: italic;}
+.source-perl .co3 {color: #0000ff;}
+.source-perl .co4 {color: #cc0000; font-style: italic;}
+.source-perl .co5 {color: #0000ff;}
+.source-perl .coMULTI {color: #666666; font-style: italic;}
+.source-perl .es0 {color: #000099; font-weight: bold;}
+.source-perl .br0 {color: #009900;}
+.source-perl .sy0 {color: #339933;}
+.source-perl .st0 {color: #ff0000;}
+.source-perl .nu0 {color: #cc66cc;}
+.source-perl .me1 {color: #006600;}
+.source-perl .me2 {color: #006600;}
+.source-perl .re0 {color: #0000ff;}
+.source-perl .re4 {color: #009999;}
+.source-perl .ln-xtra, .source-perl li.ln-xtra, .source-perl div.ln-xtra {background-color: #ffc;}
+.source-perl span.xtra { display:block; } */
+
+
+/* -------------------------- lang=&quot;php&quot; --------------------------- */
+
+/* CSS based on the original one (below), main changes COLORS INVERTED */
+
+.source-php {line-height: normal; font-family: monospace;}
+.source-php li, .source-php pre {line-height: normal; border: 0px none white; background-color: #000000;}
+.source-php .de1, .source-php .de2 {font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-php .imp {font-weight: bold; color: #00FFFF;}
+.source-php li, .source-php li.li1 {font-weight: normal;}
+.source-php li.li2 {font-weight: bold;}
+.source-php .kw1 {color: #4E4EFF;}
+.source-php .kw2 {color: #FFFFFF; font-weight: bold;}
+.source-php .kw3 {color: #66FFFF;}
+.source-php .co1 {color: #999999; font-style: italic;}
+.source-php .co2 {color: #999999; font-style: italic;}
+.source-php .co3 {color: #FFFF33; font-style: italic;}
+.source-php .coMULTI {color: #999999; font-style: italic;}
+.source-php .es0 {color: #FFFF66; font-weight: bold;}
+.source-php .br0 {color: #FF66FF;}
+.source-php .sy0 {color: #CC66CC;}
+.source-php .st0 {color: #FFFF00;}
+.source-php .nu0 {color: #339933;}
+.source-php .me1 {color: #FFBFFF;}
+.source-php .me2 {color: #FFBFFF;}
+.source-php .re0 {color: #FFFF77;}
+.source-php .ln-xtra, .source-php li.ln-xtra, .source-php div.ln-xtra {background-color: #000033;}
+.source-php span.xtra { display:block; }
+
+/* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter)
+
+.source-php {line-height: normal;}
+.source-php li, .source-php pre {line-height: normal; border: 0px none white;}
+.source-php .de1, .source-php .de2 {font-family: monospace; font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-php .imp {font-weight: bold; color: red;}
+.source-php li, .source-php li.li1 {font-weight: normal;}
+.source-php li.li2 {font-weight: bold;}
+.source-php .kw1 {color: #b1b100;}
+.source-php .kw2 {color: #000000; font-weight: bold;}
+.source-php .kw3 {color: #990000;}
+.source-php .co1 {color: #666666; font-style: italic;}
+.source-php .co2 {color: #666666; font-style: italic;}
+.source-php .co3 {color: #0000cc; font-style: italic;}
+.source-php .coMULTI {color: #666666; font-style: italic;}
+.source-php .es0 {color: #000099; font-weight: bold;}
+.source-php .br0 {color: #009900;}
+.source-php .sy0 {color: #339933;}
+.source-php .st0 {color: #0000ff;}
+.source-php .nu0 {color: #cc66cc;}
+.source-php .me1 {color: #004000;}
+.source-php .me2 {color: #004000;}
+.source-php .re0 {color: #000088;}
+.source-php .ln-xtra, .source-php li.ln-xtra, .source-php div.ln-xtra {background-color: #ffc;}
+.source-php span.xtra { display:block; } */
+
+
+/* -------------------------- lang=&quot;javascript&quot; --------------------------- */
+
+/* CSS based on the original one (below), main changes COLORS INVERTED */
+
+.source-javascript {line-height: normal; font-family: monospace;}
+.source-javascript li, .source-javascript pre {line-height: normal; border: 0px none white; background-color: #000000;}
+.source-javascript .de1, .source-javascript .de2 {font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-javascript .imp {font-weight: bold; color: #00FFFF;}
+.source-javascript li, .source-javascript li.li1 {font-weight: normal;}
+.source-javascript li.li2 {font-weight: bold;}
+.source-javascript .kw1 {color: #FFFF99; font-weight: bold;}
+.source-javascript .kw2 {color: #FFCC99; font-weight: bold;}
+.source-javascript .kw3 {color: #FFFF99;}
+.source-javascript .co1 {color: #FF99FF; font-style: italic;}
+.source-javascript .co2 {color: #FF6699; font-style: italic;}
+.source-javascript .coMULTI {color: #FF99FF; font-style: italic;}
+.source-javascript .es0 {color: #FFFF66; font-weight: bold;}
+.source-javascript .br0 {color: #FF66FF;}
+.source-javascript .sy0 {color: #CC66CC;}
+.source-javascript .st0 {color: #CC9933;}
+.source-javascript .nu0 {color: #33FFFF;}
+.source-javascript .me1 {color: #99FF99;}
+.source-javascript .ln-xtra, .source-javascript li.ln-xtra, .source-javascript div.ln-xtra {background-color: #000033;}
+.source-javascript span.xtra { display:block; }
+
+/* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter)
+
+.source-javascript {line-height: normal;}
+.source-javascript li, .source-javascript pre {line-height: normal; border: 0px none white;}
+.source-javascript .de1, .source-javascript .de2 {font-family: monospace; font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-javascript .imp {font-weight: bold; color: red;}
+.source-javascript li, .source-javascript li.li1 {font-weight: normal;}
+.source-javascript li.li2 {font-weight: bold;}
+.source-javascript .kw1 {color: #000066; font-weight: bold;}
+.source-javascript .kw2 {color: #003366; font-weight: bold;}
+.source-javascript .kw3 {color: #000066;}
+.source-javascript .co1 {color: #006600; font-style: italic;}
+.source-javascript .co2 {color: #009966; font-style: italic;}
+.source-javascript .coMULTI {color: #006600; font-style: italic;}
+.source-javascript .es0 {color: #000099; font-weight: bold;}
+.source-javascript .br0 {color: #009900;}
+.source-javascript .sy0 {color: #339933;}
+.source-javascript .st0 {color: #3366CC;}
+.source-javascript .nu0 {color: #CC0000;}
+.source-javascript .me1 {color: #660066;}
+.source-javascript .ln-xtra, .source-javascript li.ln-xtra, .source-javascript div.ln-xtra {background-color: #ffc;}
+.source-javascript span.xtra { display:block; } */
+
+
+/* -------------------------- lang=&quot;css&quot; --------------------------- */
+
+/* CSS based on the original one (below), main changes COLORS INVERTED */
+
+.source-css {line-height: normal; font-family: monospace;}
+.source-css li, .source-css pre {line-height: normal; border: 0px none white; background-color: #000000;}
+.source-css .de1, .source-css .de2 {font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-css .imp {font-weight: bold; color: #00FFFF;}
+.source-css li, .source-css li.li1 {font-weight: normal;}
+.source-css li.li2 {font-weight: bold;}
+.source-css .kw1 {color: #FFFFFF; font-weight: bold;}
+.source-css .kw2 {color: #66CCCC;}
+.source-css .co1 {color: #5E5EFF;}
+.source-css .coMULTI {color: #7F7F7F; font-style: italic;}
+.source-css .es0 {color: #FFFF66; font-weight: bold;}
+.source-css .br0 {color: #993399;}
+.source-css .sy0 {color: #93399;}
+.source-css .st0 {color: #00FFFF;}
+.source-css .nu0 {color: #66CCCC;}
+.source-css .re0 {color: #33FF33;}
+.source-css .re1 {color: #999900;}
+.source-css .re2 {color: #CCCC00;}
+.source-css .re3 {color: #66CCCC;}
+.source-css .re4 {color: #66CCCC;}
+.source-css .ln-xtra, .source-css li.ln-xtra, .source-css div.ln-xtra {background-color: #000033;}
+.source-css span.xtra { display:block; }
+
+/* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter)
+
+.source-css {line-height: normal;}
+.source-css li, .source-css pre {line-height: normal; border: 0px none white;}
+.source-css .de1, .source-css .de2 {font-family: monospace; font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-css .imp {font-weight: bold; color: red;}
+.source-css li, .source-css li.li1 {font-weight: normal;}
+.source-css li.li2 {font-weight: bold;}
+.source-css .kw1 {color: #000000; font-weight: bold;}
+.source-css .kw2 {color: #993333;}
+.source-css .co1 {color: #a1a100;}
+.source-css .coMULTI {color: #808080; font-style: italic;}
+.source-css .es0 {color: #000099; font-weight: bold;}
+.source-css .br0 {color: #66cc66;}
+.source-css .sy0 {color: #66cc66;}
+.source-css .st0 {color: #ff0000;}
+.source-css .nu0 {color: #933;}
+.source-css .re0 {color: #cc00cc;}
+.source-css .re1 {color: #6666ff;}
+.source-css .re2 {color: #3333ff;}
+.source-css .re3 {color: #933;}
+.source-css .re4 {color: #933;}
+.source-css .ln-xtra, .source-css li.ln-xtra, .source-css div.ln-xtra {background-color: #ffc;}
+.source-css span.xtra { display:block; } */
+
+
+/* -------------------------- lang=&quot;xml&quot; --------------------------- */
+
+/* CSS based on the original one (below), main changes COLORS INVERTED */
+
+.source-xml {line-height: normal;}
+.source-xml li, .source-xml pre {line-height: normal; border: 0px none white; background: rgb(0,0,0);}
+.source-xml .de1, .source-xml .de2 {font-family: monospace; font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-xml  {font-family: monospace;}
+.source-xml .imp {font-weight: bold; color: #0000FF;}
+.source-xml li, .source-xml li.li1 {font-weight: normal;}
+.source-xml li.li2 {font-weight: bold;}
+.source-xml .co1 {color: #7F7F7F; font-style: italic;}
+.source-xml .co2 {color: #BFBFBF; font-style: italic;}
+.source-xml .co3 {color: #FFFFFF;}
+.source-xml .co4 {color: #BFFFFF; font-weight: bold;}
+.source-xml .es0 {color: #FFFF66; font-weight: bold;}
+.source-xml .br0 {color: #993399;}
+.source-xml .sy0 {color: #993399;}
+.source-xml .st0 {color: #00FFFF;}
+.source-xml .nu0 {color: #339933;}
+.source-xml .re0 {color: #FFFF99;}
+.source-xml .re1 {color: #FFFFFF; font-weight: bold;}
+.source-xml .re2 {color: #FFFFFF; font-weight: bold;}
+.source-xml .ln-xtra, .source-xml li.ln-xtra, .source-xml div.ln-xtra {background-color: #000033;}
+.source-xml span.xtra { display:block; }
+
+/* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter)
+
+.source-xml {line-height: normal;}
+.source-xml li, .source-xml pre {line-height: normal; border: 0px none white;}
+.source-xml .de1, .source-xml .de2 {font-family: monospace; font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-xml  {font-family: monospace;}
+.source-xml .imp {font-weight: bold; color: red;}
+.source-xml li, .source-xml li.li1 {font-weight: normal;}
+.source-xml li.li2 {font-weight: bold;}
+.source-xml .co1 {color: #808080; font-style: italic;}
+.source-xml .co2 {color: #404040; font-style: italic;}
+.source-xml .co3 {color: #000000;}
+.source-xml .co4 {color: #400000; font-weight: bold;}
+.source-xml .es0 {color: #000099; font-weight: bold;}
+.source-xml .br0 {color: #66cc66;}
+.source-xml .sy0 {color: #66cc66;}
+.source-xml .st0 {color: #ff0000;}
+.source-xml .nu0 {color: #cc66cc;}
+.source-xml .re0 {color: #000066;}
+.source-xml .re1 {color: #000000; font-weight: bold;}
+.source-xml .re2 {color: #000000; font-weight: bold;}
+.source-xml .ln-xtra, .source-xml li.ln-xtra, .source-xml div.ln-xtra {background-color: #ffc;}
+.source-xml span.xtra { display:block; } */
+
+
+/* -------------------------- lang=&quot;dos&quot; --------------------------- */
+
+/* CSS based on the original one (below), main changes COLORS INVERTED */
+
+.source-dos {line-height: normal; font-family: monospace;}
+.source-dos li, .source-dos pre {line-height: normal; border: 0px none white; background-color: #000000;}
+.source-dos .de1, .source-dos .de2 {font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-dos .imp {font-weight: bold; color: #00FFFF;}
+.source-dos li, .source-dos li.li1 {font-weight: normal;}
+.source-dos li.li2 {font-weight: bold;}
+.source-dos .kw1 {color: #FF4EFF; font-weight: bold;}
+.source-dos .kw2 {color: #FFFFFF; font-weight: bold;}
+.source-dos .kw3 {color: #4E4EFF; font-weight: bold;}
+.source-dos .kw4 {color: #FFFF00; font-weight: bold;}
+.source-dos .co1 {color: #7F7F7F; font-style: italic;}
+.source-dos .co2 {color: #7F7F7F; font-style: italic;}
+.source-dos .es0 {color: #00FFFF; font-weight: bold;}
+.source-dos .br0 {color: #993399;}
+.source-dos .sy0 {color: #CC33CC;}
+.source-dos .sy1 {color: #CC33CC;}
+.source-dos .st0 {color: #00FFFF;}
+.source-dos .nu0 {color: #339933;}
+.source-dos .re0 {color: #4EFF4E; font-weight: bold;}
+.source-dos .re1 {color: #BB77BB;}
+.source-dos .re2 {color: #BB7777;}
+.source-dos .ln-xtra, .source-dos li.ln-xtra, .source-dos div.ln-xtra {background-color: #000033;}
+.source-dos span.xtra { display:block; }
+
+/* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter)
+
+.source-dos {line-height: normal;}
+.source-dos li, .source-dos pre {line-height: normal; border: 0px none white;}
+.source-dos .de1, .source-dos .de2 {font-family: monospace; font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-dos .imp {font-weight: bold; color: red;}
+.source-dos li, .source-dos li.li1 {font-weight: normal;}
+.source-dos li.li2 {font-weight: bold;}
+.source-dos .kw1 {color: #00b100; font-weight: bold;}
+.source-dos .kw2 {color: #000000; font-weight: bold;}
+.source-dos .kw3 {color: #b1b100; font-weight: bold;}
+.source-dos .kw4 {color: #0000ff; font-weight: bold;}
+.source-dos .co1 {color: #808080; font-style: italic;}
+.source-dos .co2 {color: #808080; font-style: italic;}
+.source-dos .es0 {color: #ff0000; font-weight: bold;}
+.source-dos .br0 {color: #66cc66;}
+.source-dos .sy0 {color: #33cc33;}
+.source-dos .sy1 {color: #33cc33;}
+.source-dos .st0 {color: #ff0000;}
+.source-dos .nu0 {color: #cc66cc;}
+.source-dos .re0 {color: #b100b1; font-weight: bold;}
+.source-dos .re1 {color: #448844;}
+.source-dos .re2 {color: #448888;}
+.source-dos .ln-xtra, .source-dos li.ln-xtra, .source-dos div.ln-xtra {background-color: #ffc;}
+.source-dos span.xtra { display:block; } */
+
+
+/* -------------------------- lang=&quot;ini&quot; --------------------------- */
+
+/* CSS based on the original one (below), main changes COLORS INVERTED */
+
+.source-ini {line-height: normal; font-family: monospace;}
+.source-ini li, .source-ini pre {line-height: normal; border: 0px none white; background-color: #000000;}
+.source-ini .de1, .source-ini .de2 {font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-ini .imp {font-weight: bold; color: #00FFFF;}
+.source-ini li, .source-ini li.li1 {font-weight: normal;}
+.source-ini li.li2 {font-weight: bold;}
+.source-ini .co0 {color: #999999; font-style: italic;}
+.source-ini .sy0 {color: #FFFF99; font-weight:bold;}
+.source-ini .st0 {color: #66CCCC;}
+.source-ini .re0 {color: #FFFF99; font-weight:bold;}
+.source-ini .re1 {color: #FFFF66;}
+.source-ini .re2 {color: #99FF99;}
+.source-ini .ln-xtra, .source-ini li.ln-xtra, .source-ini div.ln-xtra {background-color: #000033;}
+.source-ini span.xtra { display:block; }
+
+/* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter)
+
+.source-ini {line-height: normal;}
+.source-ini li, .source-ini pre {line-height: normal; border: 0px none white;}
+.source-ini .de1, .source-ini .de2 {font-family: monospace; font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-ini .imp {font-weight: bold; color: red;}
+.source-ini li, .source-ini li.li1 {font-weight: normal;}
+.source-ini li.li2 {font-weight: bold;}
+.source-ini .co0 {color: #666666; font-style: italic;}
+.source-ini .sy0 {color: #000066; font-weight:bold;}
+.source-ini .st0 {color: #933;}
+.source-ini .re0 {color: #000066; font-weight:bold;}
+.source-ini .re1 {color: #000099;}
+.source-ini .re2 {color: #660066;}
+.source-ini .ln-xtra, .source-ini li.ln-xtra, .source-ini div.ln-xtra {background-color: #ffc;}
+.source-ini span.xtra { display:block; } */
+
+
+/* -------------------------- lang=&quot;text&quot; --------------------------- */
+
+/* CSS based on the original one (below), main changes COLORS INVERTED */
+
+.source-text {line-height: normal; font-family: monospace;}
+.source-text li, .source-text pre {line-height: normal; border: 0px none white; background-color: #000000;}
+.source-text .de1, .source-text .de2 {font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-text .imp {font-weight: bold; color: #00FFFF;}
+.source-text li, .source-text li.li1 {font-weight: normal;}
+.source-text li.li2 {font-weight: bold;}
+.source-text .ln-xtra, .source-text li.ln-xtra, .source-text div.ln-xtra {background-color: #000033;}
+.source-text span.xtra { display:block; }
+
+/* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter)
+
+.source-text {line-height: normal;}
+.source-text li, .source-text pre {line-height: normal; border: 0px none white;}
+.source-text .de1, .source-text .de2 {font-family: monospace; font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-text .imp {font-weight: bold; color: red;}
+.source-text li, .source-text li.li1 {font-weight: normal;}
+.source-text li.li2 {font-weight: bold;}
+.source-text .ln-xtra, .source-text li.ln-xtra, .source-text div.ln-xtra {background-color: #ffc;}
+.source-text span.xtra { display:block; } */
+
+/* 
+&lt;/pre&gt; */</text>
+    </revision>
+  </page>
+</mediawiki>

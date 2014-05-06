@@ -1,0 +1,695 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.3/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.3/ http://www.mediawiki.org/xml/export-0.3.xsd" version="0.3" xml:lang="en">
+  <siteinfo>
+    <sitename>BlenderWiki</sitename>
+    <base>http://wiki.blender.org/index.php/Main_Page</base>
+    <generator>MediaWiki 1.15.0</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2">Media</namespace>
+      <namespace key="-1">Special</namespace>
+      <namespace key="0" />
+      <namespace key="1">Talk</namespace>
+      <namespace key="2">User</namespace>
+      <namespace key="3">User talk</namespace>
+      <namespace key="4">BlenderWiki</namespace>
+      <namespace key="5">BlenderWiki talk</namespace>
+      <namespace key="6">File</namespace>
+      <namespace key="7">File talk</namespace>
+      <namespace key="8">MediaWiki</namespace>
+      <namespace key="9">MediaWiki talk</namespace>
+      <namespace key="10">Template</namespace>
+      <namespace key="11">Template talk</namespace>
+      <namespace key="12">Help</namespace>
+      <namespace key="13">Help talk</namespace>
+      <namespace key="14">Category</namespace>
+      <namespace key="15">Category talk</namespace>
+      <namespace key="100">Doc</namespace>
+      <namespace key="101">Doc talk</namespace>
+      <namespace key="102">Extensions</namespace>
+      <namespace key="103">Extensions talk</namespace>
+      <namespace key="104">Dev</namespace>
+      <namespace key="105">Dev talk</namespace>
+      <namespace key="106">Org</namespace>
+      <namespace key="107">Org talk</namespace>
+      <namespace key="108">Meta</namespace>
+      <namespace key="109">Meta talk</namespace>
+      <namespace key="110">Attic</namespace>
+      <namespace key="111">Attic talk</namespace>
+      <namespace key="112">Robotics</namespace>
+      <namespace key="113">Robotics talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Category:Blend-doc-repository/Template/Page</title>
+    <id>26615</id>
+    <revision>
+      <id>115115</id>
+      <timestamp>2010-05-25T07:06:49Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">This category is used to retrieve templates that are part of the [https://svn.blender.org/svnroot/blend-doc blend-doc repository] to commit it in that repository.
+
+[[Category:Blend-doc-repository/Template/Page]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Blend-doc-repository/Template/Page</title>
+    <id>26614</id>
+    <revision>
+      <id>117972</id>
+      <timestamp>2010-05-28T13:26:30Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">&lt;br/&gt;
+----
+&lt;span style=&quot;color:grey&quot;&gt;
+''This template is part of the [https://svn.blender.org/svnroot/blend-doc blend-doc repository]. We use categories to retrieve templates in order to commit it in that repository: '''please don't remove the categorization from this template'''.''
+&lt;/span&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;[[Category:Blend-doc-repository/Template/Page]]&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Page</title>
+    <id>17957</id>
+    <revision>
+      <id>117978</id>
+      <timestamp>2010-05-28T13:39:14Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">{{Subpages}}
+
+{{Blend-doc-repository/Template/Page}}
+
+[[Category:Blend-doc-repository/Template/Page]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Page/Footer</title>
+    <id>21671</id>
+    <revision>
+      <id>117974</id>
+      <timestamp>2010-05-28T13:28:54Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">&lt;includeonly&gt;&lt;div id=&quot;PDF-end&quot;&gt;&lt;/div&gt;&lt;!-- this is to build the PDF Manual  --&gt;
+&lt;br&gt;&lt;br&gt;
+{{Page/Navigator||{{{1}}}|{{{2}}}|}}
+{{#ifeq:{{{bugreport|}}}|no||{{Page/Footer/BugReport}}}}
+
+{{Subpages}}&lt;br&gt;
+{{Page/Redirects}}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}
+[[Category:Blend-doc-repository/Template/Page]]&lt;/noinclude&gt;
+__TOC__</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Page/Footer/BugReport</title>
+    <id>26597</id>
+    <revision>
+      <id>117977</id>
+      <timestamp>2010-05-28T13:31:38Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">If you have any question about this page topics, please leave a message in the [[{{TALKPAGENAME}}|discussion page]].&lt;br&gt;
+Please report any problems editing or creating these pages: [[Meta:Wiki Tasks/Bugs/Missing images/{{NAMESPACE}}:{{PAGENAME}}|Missing images in this page]], [[Meta:Wiki Tasks/Bugs/Broken links/{{NAMESPACE}}:{{PAGENAME}}|Broken links in this page]]. Thanks!&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Blend-doc-repository/Template/Page}}
+[[Category:Blend-doc-repository/Template/Page]]
+&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Page/Footer/doc</title>
+    <id>21925</id>
+    <revision>
+      <id>117973</id>
+      <timestamp>2010-05-28T13:27:51Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">At the bottom of a page, put this:
+
+ &lt;nowiki&gt;{{Page/Footer|&lt;previous page&gt;|&lt;next page&gt;}}&lt;/nowiki&gt;
+
+where &lt;previous page&gt; and &lt;next page&gt; should be the same found in the header.
+
+Icons  are clickable:
+* '''Left arrow''': previous page (shows red if page doesn't exist)
+* '''Right arrow''': next page (shows red if page doesn't exist)
+* '''Up arrow''': up one level in pages hierarchy
+* '''Top icon''': top  of the page
+
+If the page has subpages, you'll see a hierarchy of subpages listed below the navigator
+
+Example:
+
+ &lt;nowiki&gt;{{Page/Footer|Previous page|Next page}}&lt;/nowiki&gt;
+
+shows as 
+
+{{Page/Footer|Previous page|Next page}}
+
+See also [[Template:Page/Header]]
+
+{{Blend-doc-repository/Template/Page}}&lt;!--
+
+--&gt;&lt;noinclude&gt;[[Category:Blend-doc-repository/Template/Page]]&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Page/Header</title>
+    <id>21669</id>
+    <revision>
+      <id>117976</id>
+      <timestamp>2010-05-28T13:30:21Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">&lt;includeonly&gt;{{Warning/Blender2.5 doc}}
+{{#ifeq:{{{flags|}}}|no||{{Languages/FlagsRow}}}}
+{{Page/Navigator|{{{1}}}|{{{2}}}|{{{3}}}|{{{4|0}}}|oldid={{{oldid|}}}|specialtitle={{{specialtitle|}}}}}
+&lt;/includeonly&gt;&lt;noinclude&gt;{{Documentation}}
+[[Category:Blend-doc-repository/Template/Page]]&lt;/noinclude&gt;
+&lt;div id=&quot;PDF-start&quot;&gt;&lt;/div&gt;&lt;!--this is to build the PDF Manual--&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;[[Category:Blend-doc-repository/Template/Page]]&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Page/Header/doc</title>
+    <id>21924</id>
+    <revision>
+      <id>117975</id>
+      <timestamp>2010-05-28T13:30:14Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">In the first line of a page, put this:
+
+ &lt;nowiki&gt;{{Page/Header|&lt;blender version&gt;|&lt;previous page&gt;|&lt;next page&gt;}}&lt;/nowiki&gt;
+
+&lt;previous page&gt; and &lt;next page&gt; being valid links to proper pages.
+
+Icons  are clickable:
+* '''Left arrow''': previous page (shows red if page doesn't exist)
+* '''Right arrow''': next page (shows red if page doesn't exist)
+* '''Up arrow''': up one level in pages hierarchy
+
+Example:
+
+ &lt;nowiki&gt;{{Page/Header|2.49|Previous page|Next page}}&lt;/nowiki&gt;
+
+shows as 
+
+{{Page/Header|2.49|Previous page|Next page}}
+
+See also [[Template:Page/Footer]]
+
+== Localized headers ==
+
+In case you're putting this header in a translation page, you'll see a little progress bar in the navigator showing a percentage, zero by default.
+
+You can add two additional variables (alone or together).
+
+; '''Percentage of translated text'''
+
+:&lt;nowiki&gt;{{Page/Header|&lt;blender version&gt;|&lt;previous page&gt;|&lt;next page&gt;|&lt;percentage&gt;}}&lt;/nowiki&gt;
+
+; '''English page the translation refers to (&quot;oldid&quot;)'''
+
+:&lt;nowiki&gt;{{Page/Header|&lt;blender version&gt;|&lt;previous page&gt;|&lt;next page&gt;|oldid=&lt;english revision you are translating&gt;}}&lt;/nowiki&gt;
+
+: For example if the revision number of the english page you are translating is &quot;12345&quot;, if you put &quot;oldid=12345&quot; in Page/Header the progress bar image will link to the diff page between the english revision you have put (12345) and the current version of the same english page. Like this, you can easily check what's changed since your last update.
+: Since it is actually an external link you'll see a little white arrow near the progress bar image to indicate there's a link, or the little bar won't have any link on it.
+: Example: [[Doc:FR/Manual/Modelling/Meshes/Weight_Paint]]
+
+: '''How to retrieve the oldid'''
+: Each page has a link in the Sidebar called '''Permanent link''', hover on it with the mouse and read the Status bar in your browser to get the revision number of that page (if you don't have a Status bar click on that Permalink and see the rev number in the URL of the resulting page)
+
+{{Blend-doc-repository/Template/Page}}&lt;!--
+
+--&gt;&lt;noinclude&gt;[[Category:Blend-doc-repository/Template/Page]]&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Page/Navigator</title>
+    <id>21668</id>
+    <revision>
+      <id>117979</id>
+      <timestamp>2010-05-28T13:41:37Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">&lt;div class=&quot;navigator&quot;&gt;
+	&lt;div style=&quot;overflow: hidden; position: relative; float: left; width: 17px; height: 19px;&quot;&gt;
+		&lt;div style=&quot;position: absolute; top: 0pt; left: 0pt; width: 100%; height: 100%;&quot;&gt;{{Page/Navigator/Arrow|left|link={{{2}}}}}&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style=&quot;overflow: hidden; position: relative; float: left; width: 17px; height: 19px;&quot;&gt;
+		&lt;div style=&quot;position: absolute; top: 0pt; left: 0pt; width: 100%; height: 100%;&quot;&gt;{{Page/Navigator/Arrow|up|link={{#titleparts:{{FULLPAGENAME}}|-1}}}}&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style=&quot;overflow: hidden; position: relative; float: left; width: 17px; height: 19px;&quot;&gt;
+		&lt;div style=&quot;position: absolute; top: 0pt; left: 0pt; width: 100%; height: 100%;&quot;&gt;{{#if:{{{1|}}}||{{Page/Navigator/Arrow|top}}}}&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style=&quot;overflow: hidden; position: relative; float: right; width: 17px; height: 19px;&quot;&gt;
+		&lt;div style=&quot;position: absolute; top: 0pt; left: 0pt; width: 100%; height: 100%;&quot;&gt;{{Page/Navigator/Arrow|right|link={{{3}}}}}&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style=&quot;overflow: hidden; position: relative; float: right;&quot;&gt;
+		{{#if:{{{1|}}}|{{Languages/Status|{{{4|0}}}|link={{#if:{{{oldid|}}}|{{fullurl:{{Languages/ThisPageTranslatedIn|en|{{FULLPAGENAME}}}}|diff=cur&amp;oldid={{{oldid|}}} }}|}}}}|}}
+	&lt;/div&gt;
+	&lt;div&gt;[[{{NAMESPACE}}:{{Languages/Section}}|{{Languages/LangName|{{Languages/Language}}}} {{#titleparts:{{Languages/Section}}|1|-1}}]] {{#if:{{{1|}}}| - Blender '''{{{1}}}'''|}}{{#if:{{{specialtitle|}}}| - '''{{{specialtitle}}}'''|}}&lt;/div&gt;
+&lt;/div&gt;
+[[Category:Blender_{{{1}}}]]&lt;!--
+
+--&gt;&lt;noinclude&gt;
+
+
+{{Blend-doc-repository/Template/Page}}
+
+[[Category:Blend-doc-repository/Template/Page]]
+&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:IsUpper</title>
+    <id>23325</id>
+    <revision>
+      <id>114073</id>
+      <timestamp>2010-05-09T15:34:01Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#ifeq:{{ucfirst:{{{1|}}}}}|{{{1|}}}|1|0}}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:LastPart</title>
+    <id>23326</id>
+    <revision>
+      <id>89791</id>
+      <timestamp>2010-01-04T01:03:12Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>Created page with '{{#titleparts:{{{1|}}}|1|-1}}'</comment>
+      <text xml:space="preserve">{{#titleparts:{{{1|}}}|1|-1}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Multiply</title>
+    <id>21959</id>
+    <revision>
+      <id>82941</id>
+      <timestamp>2009-08-29T17:24:58Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>it's preferrable it returns nothing istead of errors</comment>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#switch:{{{2|}}}
+|1={{{1|}}}
+|2={{{1|}}}{{{1|}}}
+|3={{{1|}}}{{{1|}}}{{{1|}}}
+|4={{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}
+|5={{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}
+|6={{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}
+|7={{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}
+|8={{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}
+|9={{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}
+|10={{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}{{{1|}}}
+|}}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:PagetitlePartsAmount</title>
+    <id>21961</id>
+    <revision>
+      <id>82945</id>
+      <timestamp>2009-08-29T17:54:22Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>Created page with '{{#switch: |{{#titleparts:{{{1}}}|1|2}}=1 |{{#titleparts:{{{1}}}|1|3}}=2 |{{#titleparts:{{{1}}}|1|4}}=3 |{{#titleparts:{{{1}}}|1|5}}=4 |{{#titleparts:{{{1}}}|1|6}}=5 |{{#titlepar…'</comment>
+      <text xml:space="preserve">{{#switch:
+|{{#titleparts:{{{1}}}|1|2}}=1
+|{{#titleparts:{{{1}}}|1|3}}=2
+|{{#titleparts:{{{1}}}|1|4}}=3
+|{{#titleparts:{{{1}}}|1|5}}=4
+|{{#titleparts:{{{1}}}|1|6}}=5
+|{{#titleparts:{{{1}}}|1|7}}=6
+|{{#titleparts:{{{1}}}|1|8}}=7
+|{{#titleparts:{{{1}}}|1|9}}=8
+|{{#titleparts:{{{1}}}|1|10}}=9
+|{{#titleparts:{{{1}}}|1|11}}=10
+|{{#titleparts:{{{1}}}|1|12}}=11
+|{{#titleparts:{{{1}}}|1|13}}=12
+|{{#titleparts:{{{1}}}|1|14}}=13
+|{{#titleparts:{{{1}}}|1|15}}=14
+|{{#titleparts:{{{1}}}|1|16}}=15
+|{{#titleparts:{{{1}}}|1|17}}=16
+|{{#titleparts:{{{1}}}|1|18}}=17
+|{{#titleparts:{{{1}}}|1|19}}=18
+|{{#titleparts:{{{1}}}|1|20}}=19
+|{{#titleparts:{{{1}}}|1|21}}=20
+|{{#titleparts:{{{1}}}|1|22}}=21
+|{{#titleparts:{{{1}}}|1|23}}=22
+|{{#titleparts:{{{1}}}|1|24}}=23
+|{{#titleparts:{{{1}}}|1|25}}=24
+|#default=&lt;span style=&quot;color:red; font-weight:bold&quot;&gt;{{#if:{{{1|}}}
+	|Page {{{1}}} has more than 25 parts, can't process this...
+	|[[Template:PagetitlePartsAmount]]: missing variable...}}&lt;/span&gt;}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Subpages</title>
+    <id>16835</id>
+    <revision>
+      <id>91892</id>
+      <timestamp>2010-01-26T15:00:37Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#dpl:
+  |debug=0
+  |mode=ordered
+  |namespace={{NAMESPACE}}
+  |titlematch={{PAGENAME}}/%
+  |shownamespace=false
+  |format= &lt;br&gt;'''Subpages'''&lt;br&gt;,²{#ifeq:²{IsUpper¦²{LastPart¦%PAGE%}²}²¦1¦\n#[[%PAGE%|²{Multiply¦&amp;nbsp;&amp;nbsp;&amp;nbsp;¦²{#expr:²{PagetitlePartsAmount¦%TITLE%}²-²{PagetitlePartsAmount¦²{PAGENAME}² }² -1 }² }²²{LastPart¦%TITLE%}² ]]¦}²,,
+}}&lt;/includeonly&gt;&lt;!--
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Documentation</title>
+    <id>21922</id>
+    <revision>
+      <id>114062</id>
+      <timestamp>2010-05-09T14:40:45Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>Undo revision 114058 by [[Special:Contributions/Mindrones|Mindrones]] ([[User talk:Mindrones|Talk]])</comment>
+      <text xml:space="preserve">&lt;includeonly&gt;
+{{#ifexist:{{FULLPAGENAME}}/doc|{{{{FULLPAGENAME}}/doc}}|}}&lt;/includeonly&gt;
+&lt;noinclude&gt;{{Template:Documentation/doc}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/LangName</title>
+    <id>21639</id>
+    <revision>
+      <id>114084</id>
+      <timestamp>2010-05-09T16:51:16Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>added new languages</comment>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#switch: {{lc:{{{1|}}}}}| ar=Arabic| bg=Bulgarian| br=Brazilian| ca=Catalan| cz=Czech| de=German| dk=Danish| el=Greek| en=English| es=Spanish| fa=Farsi| fi=Finnish| fr=French| id=Indonesian| it=Italian| ko=Korean| mn=Mongolian | nl=Dutch| pl=Polish| pt=Portuguese| ro=Romanian| ru=Russian| sr=Serbian| sv=Swedish| th=Thai|tr=	Turkish| uk=Ukrainian| zh=Chinese| }}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/Language</title>
+    <id>21640</id>
+    <revision>
+      <id>114090</id>
+      <timestamp>2010-05-09T19:16:57Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#if:{{Languages/PageIsEnglish}}
+|{{{1|}}}
+|{{#titleparts:{{PAGENAME}}|1|1}}
+}}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/PageIsEnglish</title>
+    <id>23341</id>
+    <revision>
+      <id>94368</id>
+      <timestamp>2010-02-23T07:55:11Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>greece</comment>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#switch:{{#titleparts:{{{1|{{PAGENAME}}}}}|1}} |AR|BG|BR|CA|CZ|DE|DK|EL|ES|FA|FI|FR|ID|IT|KO|MN|NL|PL|PT|RO|RU|SR|SV|TH|TR|UK|ZH=|this_page_is_english}}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/Section</title>
+    <id>21637</id>
+    <revision>
+      <id>98181</id>
+      <timestamp>2010-03-20T17:28:23Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#if:{{Languages/PageIsEnglish}}
+|{{#switch:{{#titleparts:{{PAGENAME}}|1|1}}
+  |2.4|2.5={{#switch:{{#titleparts:{{PAGENAME}}|1|2}}
+            |Books|Ref|Py={{#titleparts:{{PAGENAME}}|3|1}}
+            |{{#titleparts:{{PAGENAME}}|2|1}}}}
+  |{{#switch:{{#titleparts:{{PAGENAME}}|1|1}}
+    |Books|Ref|Py={{#titleparts:{{PAGENAME}}|2|1}}
+    |{{#titleparts:{{PAGENAME}}|1|1}}}}}}
+|{{#switch:{{#titleparts:{{PAGENAME}}|1|2}}
+  |2.4|2.5={{#switch:{{#titleparts:{{PAGENAME}}|1|3}}
+            |Books|Ref|Py={{#titleparts:{{PAGENAME}}|4|1}}
+            |{{#titleparts:{{PAGENAME}}|3|1}}}}
+  |{{#switch:{{#titleparts:{{PAGENAME}}|1|2}}
+    |Books|Ref|Py={{#titleparts:{{PAGENAME}}|3|1}}
+    |{{#titleparts:{{PAGENAME}}|2|1}}}}}}
+}}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Page/Navigator/Arrow</title>
+    <id>24534</id>
+    <revision>
+      <id>113633</id>
+      <timestamp>2010-04-29T09:01:40Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">{{#switch:{{{1|}}}
+|left={{#ifexist:{{{link}}}|[[Image:LeftArrowHeader.png|link={{{link}}}]]|[[Image:LeftArrowHeader-nolink.png|link=]]}}
+|right={{#ifexist:{{{link}}}|[[Image:RightArrowHeader.png|link={{{link}}}]]|[[Image:RightArrowHeader-nolink.png|link=]]}}
+|up=[[Image:Header-UpArrow.png|link={{{link}}}]]
+|top=[[Image:Header-TopArrow.png|link=#top]]
+|ERROR: please insert the direction of the arrow}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Page/Redirects</title>
+    <id>22283</id>
+    <revision>
+      <id>84719</id>
+      <timestamp>2009-09-25T09:22:29Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">{{#dpl:
+ |debug=0
+ |linksfrom={{{1|{{FULLPAGENAME}}}}}
+ |redirects = only
+ |format= '''Redirects to fix''',\n*%PAGE% → ²{Page/LinksFrom¦%PAGE%}²
+}}</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Clr</title>
+    <id>2767</id>
+    <revision>
+      <id>114068</id>
+      <timestamp>2010-05-09T14:52:17Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">&lt;includeonly&gt;&lt;br style=&quot;clear:both;&quot;&gt;&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/Flag</title>
+    <id>21628</id>
+    <revision>
+      <id>89140</id>
+      <timestamp>2009-12-13T18:10:12Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>Undo revision 89121 by [[Special:Contributions/Unlucky8|Unlucky8]] ([[User talk:Unlucky8|Talk]])</comment>
+      <text xml:space="preserve">&lt;includeonly&gt;[[Image:Flag-{{uc:{{{1}}}}}{{#ifexist:{{{2|{{Languages/ThisPageTranslatedIn|{{{1}}} }} }}}||-dark}}.png|link={{{2|{{Languages/ThisPageTranslatedIn|{{{1}}} }} }}}|25px]]&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/FlagsRow</title>
+    <id>21629</id>
+    <revision>
+      <id>113065</id>
+      <timestamp>2010-04-24T08:15:19Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <text xml:space="preserve">&lt;includeonly&gt;&lt;div class=&quot;languages&quot;&gt;
+{{Languages/Flag|ar}} {{Languages/Flag|bg}} {{Languages/Flag|br}} {{Languages/Flag|ca}} {{Languages/Flag|cz}} {{Languages/Flag|de}} {{Languages/Flag|dk}} {{Languages/Flag|el}} {{Languages/Flag|en}} {{Languages/Flag|es}} {{Languages/Flag|fa}} {{Languages/Flag|fi}} {{Languages/Flag|fr}} {{Languages/Flag|id}} {{Languages/Flag|it}} {{Languages/Flag|ko}} {{Languages/Flag|mn}} {{Languages/Flag|nl}} {{Languages/Flag|pl}} {{Languages/Flag|pt}} {{Languages/Flag|ro}} {{Languages/Flag|ru}} {{Languages/Flag|sv}} {{Languages/Flag|th}} {{Languages/Flag|tr}} {{Languages/Flag|zh}}
+&lt;/div&gt;&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/Status</title>
+    <id>21706</id>
+    <revision>
+      <id>86300</id>
+      <timestamp>2009-10-12T09:59:14Z</timestamp>
+      <contributor>
+        <ip>78.180.212.211</ip>
+      </contributor>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#switch: {{#titleparts:{{PAGENAME}}|1|1}} |AR|BG|BR|CA|CZ|DE|DK|ES|FA|FI|FR|ID|IT|KO|NL|PL|PT|RO|RU|SR|SV|TR|UK|ZH={{#ifeq:{{{1|}}}|100
+|{{WikiTask/Done|link={{{link|}}}}}|{{WikiTask/Inprogress| {{{1|0}}}|link={{{link|}}}}} }} | }}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Languages/ThisPageTranslatedIn</title>
+    <id>21627</id>
+    <revision>
+      <id>89842</id>
+      <timestamp>2010-01-04T18:23:27Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>I've put all languages in a single template so there's only one place we have to update when new languages come: Languages/PageIsEnglish -&gt; I'm using it</comment>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#ifeq:{{uc:{{{1}}}}}|EN|
+{{#if:{{Languages/PageIsEnglish}}
+|{{Namespace}}{{PAGENAME}}
+|{{Namespace}}{{#titleparts:{{PAGENAME}}||2}}
+}}
+|
+{{#if:{{Languages/PageIsEnglish}}
+|{{Namespace}}{{uc:{{{1}}}}}/{{PAGENAME}}
+|{{Namespace}}{{uc:{{{1}}}}}/{{#titleparts:{{PAGENAME}}||2}}
+}}
+}}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Namespace</title>
+    <id>22063</id>
+    <revision>
+      <id>83425</id>
+      <timestamp>2009-09-03T11:16:54Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>Protected &quot;[[Template:Namespace]]&quot; ([edit=sysop] (indefinite) [move=sysop] (indefinite))</comment>
+      <text xml:space="preserve">&lt;includeonly&gt;{{#ifeq:{{NAMESPACE}}|||{{NAMESPACE}}:}}&lt;/includeonly&gt;&lt;!--
+
+--&gt;&lt;noinclude&gt;{{Documentation}}&lt;/noinclude&gt;</text>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Warning/Blender2.5 doc</title>
+    <id>22706</id>
+    <revision>
+      <id>89935</id>
+      <timestamp>2010-01-07T18:24:23Z</timestamp>
+      <contributor>
+        <username>Mindrones</username>
+        <id>21198</id>
+      </contributor>
+      <minor/>
+      <comment>now the warning should work in localized pages too</comment>
+      <text xml:space="preserve">{{#if:{{Languages/PageIsEnglish}}
+|{{#switch:{{#titleparts:{{PAGENAME}}|1|1}}
+	|Manual|Reference={{Warning/Blender2.5 doc/if2.4}}
+	|2.5={{Warning/Blender2.5 doc/if2.5}}
+}}
+|{{#switch:{{#titleparts:{{PAGENAME}}|1|2}}
+	|Manual|Reference={{Warning/Blender2.5 doc/if2.4}}
+	|2.5={{Warning/Blender2.5 doc/if2.5}}
+}}
+}}
+{{clr}}</text>
+    </revision>
+  </page>
+</mediawiki>
