@@ -1,0 +1,8 @@
+=BlenderTreeAndMenu=
+This is a rewrite of the well-known TreeAndMenu extension, driven by the following problems:
+*Tam wasn’t cachable with condcache, due to the fact it produces its final JS code in a late step (using parserAfterTidy hook…).
+*Tam was using an old and deprecated way to parse its content, which has the side effect to reset the parser (and hence lose most of current “context”).
+
+It should be a drop-in replacement to tam functions, in that #cachable_(tree/menu) use exactly the same parameters and syntax as #(tree/menu). However, all the parsing is done in the main parser step, and generated JS code is protected by stripping the result in wiki output…
+
+IMPORTANT: #cachable_menu '''has not been tested at all!''' Will do when need rises – time is precious!

@@ -1,0 +1,8 @@
+Extract naiad directory into skins directory.
+
+Add
+
+require_once( "$IP/skins/naiad/naiad.php" );
+
+to LocalSettings.php
+

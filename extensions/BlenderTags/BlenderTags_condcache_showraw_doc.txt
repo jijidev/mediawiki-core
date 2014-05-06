@@ -1,0 +1,52 @@
+=Condcache=
+This tag caches its ''parsed'' (rendered) content.
+
+==Parameters and Usage==
+Just embed the code which result you want to be cached inside that tag. You have a few optional parameters (IMPORTANT All parameters are first parsed as wikitext!):
+
+;id
+:An additional id to append to the raw content’s checksum (see below), to get the cache ID.
+
+;pagen (n being a number)
+:You can have as much pagen (page1, page2, etc.) parameter as you like. Each one must contain a valid wikipage address. Then each time one of those pages’ content changes, the cache will be invalidated (and hence re-computed). Note that if you want the “owner” page editing to always trigger a cache refresh, you must add its address as one of those parameters… Change in cached wikicode will always force a cache refresh, though (see below).
+
+As final notes:
+*condcache detects when its page is called with the &action=purge option, and always refresh itself in this case. This allows you to always be able to force a refresh!
+*It should be easy to add other conditions if/when needed (like e.g. a “timer”, e.g. refresh the cache every hour, etc.).
+*Unfortunately, when transcluding a page containing tags, MW seems to return a stripped content from that transcluded wikicode, rather than real wiki code. This prevents some condcache setups to work…
+
+==How it Works==
+This tag is built on customized versions of the MW Parser::(un)serialiseHalParsedText() functions (customized, because in MW 1.16.2, those functions have a few crucial bugs…).
+
+Roughly, the idea is to cache:
+*The rendered text itself;
+*The striped content (raw html code that is replaced by the UNIQ-xxx--QINU markers in output);
+*The links (which are represented as XML comments in the form of <!--LINK…--> in the output).
+
+And, when uncaching, to return the text, and merge striped content and links with current parser’s ones.
+
+A cache is identified by two elements:
+*An optional ID given by the user, and…
+*The sha1 checksum of the ''raw wikicode'' inside the tag.
+
+This means that, if you have the same code cached in multiple pages, or several times inside a same page, and you don’t want them to share the same cache, ''you must manually specify different ids'' for each one!
+
+This also implies that the cache is automatically invalidated each time you change its raw wikicode!
+
+=Showraw=
+This is a pure-debugging tag! It allows you to get various states in parsing process of its content wikicode.
+
+By default, it only shows its raw, unparsed wikicode.
+
+;raw
+:If set to 1, display raw parsed result.
+
+;unstrip
+If set to 1, display raw parsed and unstriped result.
+
+;links
+:If set to 1, display raw parsed and links-replaced result.
+
+;final
+:If set to 1, display final parsed, unstriped and links-replaced result.
+
