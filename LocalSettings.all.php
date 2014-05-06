@@ -22,10 +22,6 @@ require_once( "localsettings._extensions.php" );	# private
 require_once( "LocalSettings.search.php"      );
 require_once( "LocalSettings.style.php"       );
 
-# Site upgrade key. Must be set to a string (default provided) to turn on the
-# web installer while LocalSettings.php is in place
-$wgUpgradeKey = "f22f66e5aaee4b7e";
-
 /*
 
 TODO

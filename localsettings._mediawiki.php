@@ -10,7 +10,11 @@ $wgServer = "http://wikidwarf";
  * In 1.4, this was marked as deprecated in favor of $wgSecretKey.
  * $wgProxyKey       = "ProxyKey";
 */
-$wgSecretKey = "d4f2491dd936f0c46f12c747147108d5b5d7b9496a181937ad165ab35e2f3004";
+$wgSecretKey = "39f0dc0e8e22b5a4acedb85e34a139ffe0a09e0963d616a7236ad25e945638f0";
+
+# Site upgrade key. Must be set to a string (default provided) to turn on the
+# web installer while LocalSettings.php is in place
+$wgUpgradeKey = "12ecf7e677861cb1";
 
 
 ?>
