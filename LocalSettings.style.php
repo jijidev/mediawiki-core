@@ -11,7 +11,7 @@ require_once('skins/naiad/php/hooks.php');
 $wgStylePath        = "$wgScriptPath/skins";
 $wgStyleDirectory   = "$IP/skins";
 
-require_once( "$wgStyleDirectory/naiad/naiad.php" );
+//require_once( "$wgStyleDirectory/naiad/naiad.php" );
 $wgDefaultSkin = 'naiad';
 
 //$wgSkipSkins = array("chick", "cologneblue", "myskin", "nostalgia", "simple", "standard");
