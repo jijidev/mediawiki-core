@@ -1,4 +1,6 @@
 */
+!blender/
+!blender/*
 !cologneblue/
 !cologneblue/*
 !common/
@@ -7,11 +9,16 @@
 !modern/*
 !monobook/
 !monobook/*
+!naiad/
+!naiad/*
 !vector/
 !vector/*
 
 *.php
+!Blender.php
 !CologneBlue.php
 !Modern.php
 !MonoBook.php
+!MonoBook.deps.php
+!naiad.php
 !Vector.php
