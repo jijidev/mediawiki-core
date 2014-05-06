@@ -1,0 +1,1005 @@
+@import url(languages.css);
+
+/* @group Tags */
+
+body,p,ul,ol,div {
+	color:#FFF;
+	font-family:"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Lucida,Verdana,sans-serif;
+	font-size:12px;
+	line-height:145%;
+}
+
+body {
+	background-color:#000;
+	min-width:980px;
+	padding:0;
+}
+
+a {
+	color:#97B9CF;
+	text-decoration:none;
+}
+
+a:hover {text-decoration:underline;}
+
+h1 {font-size:17pt;}
+h1 .editsection {font-size:53%;}
+h2 {font-size:13pt;}
+h2 .editsection {font-size:67%;}
+
+h3,h4,h5,h6 {
+	font-size:12pt;
+	border-bottom:none;
+	font-weight:700;
+}
+
+h3 {font-size:132%;}
+
+h3 .editsection {
+	font-size:76%;
+	font-weight:400;
+}
+
+h4 {font-size:116%;}
+
+h4 .editsection {
+	font-size:86%;
+	font-weight:400;
+}
+
+h5 {font-size:100%;}
+h5 .editsection {font-weight:400;}
+h6 {font-size:80%;}
+
+h6 .editsection {
+	font-size:125%;
+	font-weight:400;
+}
+
+.editsection {
+	float:right;
+	margin-left:5px;
+}
+
+table {background-color:#292929;}
+
+/* wordwrap is "white-space" and "word-wrap" */
+pre {
+	background-color: #555555;
+	padding: 10px;
+	overflow: auto;
+	
+	/*
+	commenting after Campbell asked to remove word-wrap in python 
+	if we want to keep this for other languages, I'll edit these later
+	white-space: pre-wrap;        -> css-3
+	white-space: -moz-pre-wrap;   -> Mozilla, since 1999
+	white-space: -pre-wrap;       -> Opera 4-6
+	white-space: -o-pre-wrap;     -> Opera 7
+	word-wrap: break-word;        -> Internet Explorer 5.5+
+	*/
+ 
+}
+
+span {
+	display: inline;
+}
+
+a {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a.new {color: #BB0011 !important;}
+img {border:none;}
+.visualClear {clear:both;}
+
+p {
+	margin:.4em 0 .5em;
+	line-height:1.5em;
+}
+
+p img {margin:0;}
+
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+	padding-top:.5em;
+	padding-bottom:.17em;
+}
+
+fieldset {
+	margin:1em 0;
+	padding:0 1em 1em;
+}
+
+body {
+	margin:0;
+	padding:0;
+}
+
+/* @end */
+
+/* @group Navigation */
+
+.subnav {
+	height:auto!important;
+	min-height:15px;
+	padding-bottom:9px;
+	padding-left:37px;
+	padding-top:9px;
+	position:relative;
+}
+
+.subnav a {font-weight:bold;}
+
+.subnav ul {
+	display:inline;
+	margin:0;
+	padding:0;
+}
+
+.subnav li {
+	display:inline;
+	list-style-type:none;
+	margin:0;
+	padding:0 7px 0 0;
+}
+
+.subnav .search {
+	display:none;
+	float:right;
+	width:70px;
+}
+
+.subnav li.subnav-active a {color:#F39410;}
+.sublevel2 {background-color:#2C3845;}
+.sublevel2 li {font-size:0.9em;}
+.sublevel2 a {color:#D3E0E9;}
+
+li.selected a {color:#F39410;}
+
+/* @end */
+
+/* @group Main structure */
+
+#globalWrapper {
+	margin:0 auto;
+	position:relative;
+	text-align:left;
+	width:908px;
+	min-height:30em;
+	_height:30em;
+	padding:35px;
+	background-color:#232323;
+	border-color:#363636;
+	border-width:0 1px;
+	border-style:solid;
+}
+
+#column-content {
+	width:640px;
+	padding:0;
+}
+
+#content {
+	margin-left:0;
+	width:640px;
+	padding:0;
+	line-height:1.5em;
+}
+
+#content a {font-weight:bold;}
+#siteSub {display:none;}
+
+#file {
+	width:640px;
+	overflow:auto;
+}
+
+#filetoc {display:none;}
+#jump-to-nav {display:none;}
+
+#navcontainer {
+	height:50px;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	width:980px;
+}
+
+#pagecontainer {
+	margin:20px auto 35px;
+	position:relative;
+	text-align:left;
+	width:980px;
+}
+
+#pageheader {
+	height:80px;
+	position:relative;
+	background-image:url(images/bg.png);
+}
+
+#firstHeading {
+	position:absolute;
+	left:32px;
+	bottom:12px;
+	font-size:34px;
+	color:#fffae0;
+	font-family:Helvetica,Arial,sans-serif;
+	font-weight:400;
+	line-height:26px;
+}
+
+#toolbar {display:none;}
+
+#contentSub {
+	font-size:.9em;
+	padding-bottom:4px;
+}
+
+/* @end */
+
+img.grip {
+	border:0;
+	padding-right:1em;
+}
+div.center {text-align:center;}
+
+/* @group Sidebar */
+
+#column-one {
+/*background-color: #232323;*/
+	position:absolute;
+	left:664px;
+	top:0;
+	width:280px;
+	margin:35px 0 0 35px;
+	padding:0;
+	height:100%;
+}
+
+#searchform {
+	margin:0;
+	padding:0;
+}
+
+/* --- Floating content --- */
+
+#col-one-wrapper {
+	position:absolute;
+	top:0;
+/* just used to show how to include the margin in the effect */
+	margin-top:0;
+	width:280px;
+}
+
+#col-one-wrapper.fixed { /* This class is added with js while scrolling*/
+	position:fixed;
+	top:10px;
+}
+
+#col-one-wrapper.fixed.bottom { /* Addtional class to prevent overflow on footer*/
+	position:absolute;
+	bottom:50px;
+	top:auto;
+}
+
+.boxheader {
+	background-color:#3E4D5E;
+	height:33px;
+}
+
+.boxheader a {color:#FFF;}
+
+/* @group TOC */
+
+div.tocindent {margin-left:2em;}
+
+#toc {
+	text-align:left;
+	margin:0;
+}
+
+#toc-ul {margin:10px 0 10px 20px;}
+
+#preftoc {
+	display:block;
+	margin-top:0;
+	margin-left:0;
+	padding-left:0;
+	font-size:8pt;
+}
+
+#preftoc li {
+	display:inline;
+	padding-right:1em;
+}
+
+div.maintoc table {width:100%;}
+div.maintoc td {width:50%;}
+
+div.maintoc dt {
+	font-size:102%;
+	font-weight:bold;
+}
+
+/* --- TOC indentation --- */
+
+#toc-ul ul,.toc ul {
+	list-style-type:none;
+	list-style-image:none;
+	margin-left:1em;
+	padding-left:0;
+	text-align:left;
+}
+
+#toc-ul ul ul,.toc ul ul {margin:0 0 0 2em;}
+
+/* @end */
+
+.col-right-header .logout {right:0;}
+
+.col-right-section {
+	margin:0;
+	padding:0;
+	clear:both;
+}
+
+.col-right-header .username,.col-right-header .wikicontents,.col-right-header .logout {
+	margin:5px 18px 10px;
+	position:absolute;
+}
+
+#p-search h5 {display:none;}
+
+#searchInput {
+	width:100%;
+	clear:both;
+	margin:0;
+}
+
+input.searchButton {
+	margin-top:1px;
+	padding:0 .4em;
+	cursor:pointer;
+}
+
+#p-search {
+	padding:10px 20px;
+	margin:0;
+	background-color:#3E4D5E;
+	text-align:left;
+}
+
+#p-idcard {font-weight: bold;}
+#p-search-div {width:228px;}
+textarea {width:100%;}
+
+p.vspacer {
+	margin:0;
+	padding:0;
+	height:18px;
+	border-color:#363636;
+	border-style:solid;
+	border-width:0 1px 0 0;
+}
+
+#p-idcard {margin-left:35px;}
+
+div.navi-toggle {
+	cursor:pointer;
+	float:left;
+	width:16px;
+	margin-left:16px;
+	background:url(images/closed.png) no-repeat 0 8px;
+}
+
+.navi-toggle.active {background:url(images/open.png) no-repeat 0 9px;}
+
+/* @group NavTree */
+
+.dtree {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #666;
+    white-space: nowrap;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.dTreeNode {
+	font-size: 11px;
+}
+.dtree img {
+	border: 0px;
+	vertical-align: middle;
+}
+.dtree a {
+	color: #CCC;
+	text-decoration: none;
+	outline: none;
+}
+.dtree a.node, .dtree a.nodeSel {
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+}
+.dtree a.node:hover, .dtree a.nodeSel:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+.dtree a.nodeSel {
+	background-color: #c0d2ec;
+}
+.dtree .clip {
+	overflow: hidden;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Footer */
+
+#footer {
+	margin:0 auto;
+	padding:20px 20px 15px 35px;
+}
+
+#f-list {
+	margin:0;
+	padding-left:0;
+	font-size:11px;
+}
+
+#footer li {
+	display:inline;
+	margin:0 1.3em 0 0;
+}
+
+#bottom {margin:0 auto 35px;}
+
+#f-poweredbyico {float:right;}
+div.printfooter {display:none;}
+
+/* @end */
+
+/* @group Classes */
+
+.usermessage { 
+    color:black;
+    background-color: #cd5600; 
+    border: 0px solid white; 
+    font-weight: bold; 
+    margin: 0em 0em 1em 0em; 
+    padding: 0.5em 1em; 
+    vertical-align: middle; 
+} 
+
+.usermessage a {
+   color:  white;
+}
+
+
+.error {
+	color:red;
+	font-size:larger;
+}
+
+a.stub {color:#E39410;}
+
+.portlet {border:0 solid #000;}
+
+.debug {border:1px solid red;}
+
+.clearBoth {clear:both;}
+
+.boxbg {background-color:#292929;}
+.bgcolor0 {background-color:#232323;}
+.bgcolor1 {background-color:#292929;}
+.bgcolor2 {background-color:#292929;}
+.bgcolor3 {background-color:#2C3845;}
+
+/* @end */
+
+table.rimage {
+	float:right;
+	position:relative;
+	margin-left:1em;
+	margin-bottom:1em;
+	text-align:center;
+}
+
+/* @group TownBox */
+
+div.townBox {
+	position:relative;
+	float:right;
+	margin-left:1em;
+	padding:.3em;
+	width:200px;
+	overflow:hidden;
+	clear:right;
+}
+
+div.townBox dl {
+	padding:0;
+	margin:0 0 .3em;
+}
+
+div.townBox dl dt {
+	background:none;
+	margin:.4em 0 0;
+}
+
+div.townBox dl dd {	margin:.1em 0 0 1.1em;}
+
+/* @end */
+
+/* @group Port */
+
+.port .c12 {
+	padding:10px 0 10px 20px;
+	width:220px;
+}
+
+.port .c1 {
+	float:left;
+	padding:10px 0 10px 20px;
+	width:110px;
+}
+
+.port .c2 {
+	float:right;
+	padding:10px 20px 10px 0;
+	width:120px;
+}
+
+.port {
+	border:0 solid red;
+	overflow:hidden;
+}
+
+.port ul {
+	padding:0;
+	margin:0;
+}
+
+.port li {
+	font-size:8pt;
+	line-height:175%;
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.port h2 {
+	background-color:#3E4D5E;
+	padding:5px 0 10px 18px;
+	margin:0;
+	font-size:12px;
+}
+
+.port h4 {
+	font-weight:400;
+	white-space:nowrap;
+}
+
+.port h5 {
+	padding:0 1em 0 .5em;
+	display:inline;
+	height:34px;
+	font-size:10pt;
+	white-space:nowrap;
+	background-color:#3E4D5E;
+	width:100%;
+}
+
+.port h6 {
+	padding:0 1em;
+	display:block;
+	height:1.2em;
+	font-weight:400;
+	white-space:nowrap;
+}
+
+/* @end */
+
+/* @group Link icons */
+
+#bodyContent a[href ^=http://],#bodyContent a[href ^=gopher://] {
+	background:url(images/external.png) center right no-repeat;
+	padding-right:13px;
+}
+
+#bodyContent a[href ^=https://],.link-https {
+	background:url(images/lock_icon.gif) center right no-repeat;
+	padding-right:16px;
+}
+
+#bodyContent a[href ^=mailto:],.link-mailto {
+	background:url(images/mail_icon.gif) center right no-repeat;
+	padding-right:18px;
+}
+
+#bodyContent a[href ^=news://] {
+	background:url(images/news_icon.png) center right no-repeat;
+	padding-right:18px;
+}
+
+#bodyContent a[href ^=ftp://],.link-ftp {
+	background:url(images/file_icon.gif) center right no-repeat;
+	padding-right:18px;
+}
+
+#bodyContent a[href ^=irc://],.link-irc {
+	background:url(images/discussionitem_icon.gif) center right no-repeat;
+	padding-right:18px;
+}
+
+/* @end */
+
+/* @group Diff highlighting */
+ 
+
+
+
+/* @group old */
+
+td.diff-addedline {	background-color:#B9FFB0;}
+td.diff-deletedline {background-color:#f8ffaa;}
+span.diffchange {background-color:#FFCDF3;}
+.autocomment {color:grey;}
+
+#pagehistory span.user {
+	margin-left:1.4em;
+	margin-right:.4em;
+}
+
+#pagehistory span.minor {font-weight:bold;}
+
+#pagehistory li.selected {
+	background-color:#292929;
+	border:1px dashed #aaa;
+}
+
+span.urlexpansion {display:none;}
+.diff-deletedline {color:#000;}
+.diff-addedline {color:#000;}
+
+/* @end */
+
+/* @group override */
+
+table.diff, td.diff-otitle, td.diff-ntitle {background-color: #333;color:#fff;}
+td.diff-otitle,td.diff-ntitle {text-align: center;}
+td.diff-marker {text-align: right;font-size:18px;font-weight:bold;padding:3px;text-align:center;}
+.rtl td.diff-marker {text-align: left;}
+table.diff td.diff-lineno {padding-left:15px;font-weight: bold;}
+ 
+td.diff-addedline {background: #cfc;font-size: smaller;}
+td.diff-deletedline {background: #ffa;font-size: smaller;}
+ 
+table.diff {border: none;width: 98%;border-spacing: 4px;    
+    /* Fixed layout is required to ensure that cells containing long URLs
+       don't widen in Safari, Internet Explorer, or iCab */
+    table-layout: fixed;}
+table.diff td {    padding: 0;}
+table.diff col.diff-marker {width: 2%;}
+table.diff col.diff-content {width: 48%;}
+table.diff td div {
+    /* Force-wrap very long lines such as URLs or page-widening char strings.
+       CSS 3 draft..., but Gecko doesn't support it yet:
+       https://bugzilla.mozilla.org/show_bug.cgi?id=99457 */
+    word-wrap: break-word;
+ 
+    /* As fallback, scrollbars will be added for very wide cells
+       instead of text overflowing or widening */
+    overflow: auto;
+ 
+    /* The above rule breaks on very old versions of Mozilla due
+       to a bug which collapses the table cells to a single line.
+ 
+       In Mozilla 1.1 and below with JavaScript enabled, the rule
+       will be overridden with this by diff.js; wide cell contents
+       then spill horizontally without widening the rest of the
+       table: */
+    /* overflow: visible; */
+}
+ 
+ 
+/*Diff in this file*/
+td.diff-context div, td.diff-addedline div, td.diff-deletedline div{font-size:12px;padding:5px}
+td.diff-context div {background: #666;color:#bbb;}
+td.diff-addedline div{background-color: #caFFc1;color: black;}
+td.diff-deletedline div{background-color: #f9ffbb;color: black;}
+ 
+.diffchange {font-weight:bold;text-decoration:none;/*background-color: #FFCDF3;*/}
+del.diffchange{text-decoration:line-through;color: red;}
+ins.diffchange{color: red;}
+ 
+.autocomment { color:  grey; }
+#pagehistory span.user {margin-left: 1.4em;margin-right: 0.4em;}
+#pagehistory span.minor {font-weight: bold;}
+#pagehistory li.selected {background-color: #292929; border:1px dashed #aaaaaa;}
+
+/* @end */
+
+/* @end */
+
+/* @group Float */
+
+div.floatright,table.floatright {
+	clear:right;
+	float:right;
+	margin:0;
+	position:relative;
+	border-width:.5em 0 .8em 1.4em;
+}
+
+div.floatright p {font-style:italic;}
+
+div.floatleft,table.floatleft {
+	float:left;
+	margin:.3em .5em .5em 0;
+	position:relative;
+	border-width:.5em 1.4em .8em 0;
+}
+
+div.floatleft p {font-style:italic;}
+
+/* @end */
+div.lang li {display:inline;}
+
+/* @group Thumbnails */
+
+div.thumb {
+	margin-bottom:1.5em;
+	width:auto;
+	background: transparent;
+
+}
+
+div.thumbinner {
+	background-color: #555;
+}
+
+.center * {
+	margin: auto;
+}
+
+div.thumb div {
+	padding:3px!important;
+	text-align:center;
+	overflow:hidden;
+}
+
+div.thumb div div.thumbcaption {
+	border:none;
+	text-align:left;
+	line-height:1.4;
+	padding:.3em 0 .1em;
+}
+
+div.magnify {
+	float:right;
+	border:none!important;
+	background:none!important;
+}
+
+div.magnify a,div.magnify img {
+	display:block;
+	border:none!important;
+	background:none!important;
+}
+
+div.tright {
+	clear:right;
+	float:right;
+	border-width:.5em 0 .8em 1.4em;
+}
+
+div.tleft {
+	float:left;
+	margin-right:.5em;
+	border-width:.5em 1.4em .8em 0;
+}
+
+/* @end */
+
+span.hotkey {
+	border: 0.2em outset #cecbc7; 
+	background: #f0ece8; 
+	padding: 0.1em 0.4em; 
+	font-size: 0.8em; 
+	white-space: nowrap;
+}
+
+p.catlinks {
+	text-align:center;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	padding:3px;
+}
+
+#mytabs {background-color:inherit;}
+#ca-addsection a:before {content:"Add section";}
+#n-portal,#n-currentevents,#n-help,#n-sitesupport {	display:none;}
+
+span.searchmatch {
+	font-weight:700;
+	list-style-type:none;
+}
+
+#prefcontrol {
+	clear:both;
+	float:left;
+	margin-top:1em;
+}
+
+div.prefsectiontip {
+	font-size:95%;
+	margin-top:1em;
+}
+
+#mw_trackbacks {
+	border-style:groove;
+	padding:.2em;
+}
+
+.tableNormal {
+	background-color:#333;
+	border:1px #AAA solid;
+	margin-top:1em;
+	padding-left:1em;
+	padding-right:1em;
+	padding-bottom:1em;
+}
+
+.columnHalf {
+	width:50%;
+	float:left;
+}
+
+.columnThird {
+	width:33.3%;
+	float:left;
+}
+
+div.bsod {
+	border:1px solid #AAA;
+	padding:1px;
+	background:#333;
+	text-align:center;
+	margin-bottom:10px;
+}
+
+/* @group Language templates */
+
+#bodyContent h1,#bodyContent p {
+/*clear:both;*/
+}
+
+#contentSub {margin-top:13px;}
+
+/* @end */
+
+/* @group Donation Banner */
+
+#globalWrapper { /*Temporary override*/
+	padding-top:10px;
+}
+
+#donation-wrapper {
+	background-color:#232323;
+	border-left:#363636 1px solid;
+	border-right:#363636 1px solid;
+	width:908px;
+	padding:15px 35px 0;
+}
+
+#donation-banner {
+	width:908px;
+	background-color:#FFF;
+	height:100px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background:url(images/fundraising-banners/donations_banner_05.png) no-repeat;
+	position:relative;
+}
+
+#donation-banner h2 {
+	font-size:25px;
+	font-weight:400;
+}
+
+#donation-banner a {
+	padding-left:10px;
+	display:block;
+	width:500px;
+	color:#111;
+}
+
+#donation-banner a.banner-toggle {
+	position:absolute;
+	right:10px;
+	top:3px;
+	width:auto;
+	font-size:10px;
+	padding-left:2px;
+
+}
+
+#donation-banner a.hide {display:block;}
+#donation-banner a.show {display:none;}
+
+#donation-banner p strong {
+	color:#000;
+	padding-left:10px;
+}
+
+#donation-banner p strong a {
+	display:inline;
+	padding-left:0;
+	color:#000;
+	text-decoration:underline;
+}
+
+#donation-banner.minimized {height:22px;}
+
+#donation-banner.minimized h2 {
+	font-size:12px;
+	font-weight:700;
+	padding-top:3px;
+}
+
+#donation-banner.minimized a.banner-toggle.hide {display:none;}
+#donation-banner.minimized a.banner-toggle.show {display:block;}
+
+/* @end */
+
+/* @group Hotkeys */
+
+span.hotkey {
+	color: #000;
+}
+ 
+.literal {
+	color: #eeeeee;
+	white-space:nowrap;
+	font-style: italic;
+}
+ 
+.NiceTip {
+	margin:5px;
+	padding:5px;
+	border:1px solid #ddd;
+	background: #555; 
+	color: #999;
+}
+ 
+span.hotkeybg {
+	padding-left: 3px;
+	color: #fff;
+	background-color: #555;
+}
+ 
+span.hotkeybg img {
+	bottom: -2px;
+}
+div.refbox {
+	background-color: #333;
+}
+
+/* @end */
+
+/* -- Sidebar TOC NavTree switch -- */
+
+#toctitle h2 span {
+	cursor: pointer;
+	color: #AAA;
+}
+
+#toctitle h2 span.active, #toctitle h2 span:hover {
+	color: #FFF;
+}
+

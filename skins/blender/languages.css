@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+div.languages {
+        border:1px solid #AAAAAA;
+        padding: 5px 10px 5px 10px;
+        margin-bottom: -1px;
+}
+
+div.navigator  div.lang_trigger {
+	float: right;
+	width: 25px; 
+	height: 19px; 
+	margin-right:4px;
+}
+
+div.languages .lang_selector {
+	display: none;
+	cursor:pointer;
+	float:right;
+	margin-top:5px;
+	color:#97B9CF;
+
+}
+
+div.languages .lang_selector.dyn {
+	display: inline;
+}
+
+.lang_flag {
+	display: none;
+}
+
+.lang_flag.dyn {
+	display: block;
+	padding-left: 25px;
+}
+
+
+.flags_row{
+	top:22px;
+	right:0px;
+	z-index:2;
+}
+
+.flags_row.dyn{
+	display:none;
+	position:absolute;
+	text-align:left;
+}
+
+.flags_row div.flags_container {
+	position:relative; 
+	float:left;
+	padding:7px;
+	background-color:#292929;
+	width: 603px;
+}
+
+.flags_row.dyn div.flags_container {
+	width:300px; 
+}
+
+.flags_row.dyn div.flags_container div.flags_column {
+	padding-left:10px;
+	width:140px;
+	float:left;
+}
+
+div.flags_container div.lang_flag{
+	display:inline;
+}
+
+.flags_row.dyn div.flags_container div.lang_flag{
+	display:block;
+}
+
+.flags_row div.flags_container div.lang_flag img{
+	margin-left:5px;
+}
+
+.flags_row.dyn div.flags_container div.lang_flag img{
+	margin-right:5px;
+}
+
+#content div.lang_flag a{
+	font-weight: normal;
+}
+
+div.navigator {
+	border-top:1px solid #AAAAAA;
+	padding: 5px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	text-align: center;
+	clear:both;
+}
+
+span.navi-toggle{
+	cursor:pointer;}
