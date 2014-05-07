@@ -54,7 +54,7 @@ class NaiadTemplate extends BaseTemplate {
 		$body = $this->data['bodycontent'];
 
 		$skin_path = $this->data['stylepath'].'/'.$this->data['stylename'];
-		$toc_pattern = '/<table id="toc".*?<\/table>/s';
+		$toc_pattern = '/<div id="toc".*?<\/ul>\s*<\/div>/s';
 		global $foo_toc;
 		$foo_toc = '';
 		$body = preg_replace_callback(
