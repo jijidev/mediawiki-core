@@ -29,7 +29,7 @@ $wgTmpDirectory     = "$wgFileCacheDirectory/tmp";
 # http://www.mediawiki.org/wiki/Memcached
 
 
-$wgMainCacheType = CACHE_MEMCACHED;
+$wgMainCacheType = CACHE_NONE;
 $wgParserCacheType = CACHE_MEMCACHED; # optional
 $wgMessageCacheType = CACHE_MEMCACHED; # optional
 $wgMemCachedServers = array( "127.0.0.1:11211" );
